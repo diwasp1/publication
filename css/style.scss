@@ -517,10 +517,12 @@ footer{
 
 
     .footer_copyright{
+        display: flex;
+        justify-content: space-between;
         background-color: #074da2;
         color: white;
-        text-align: center;
         line-height: 40px;
+        padding: 0px 40px;
     }
 }
 
@@ -645,7 +647,8 @@ footer{
     text-align: center;
     font-size: 12px;
     padding: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
+    background-color: white;
 }
 .programs{
 
@@ -738,6 +741,8 @@ footer{
 
 .studentsview_container{
     padding-top: 60px;
+    background-color: white;
+    padding-bottom: 1px;
     .studentsview_header{
         font-size: 30px;
         font-weight: bold;

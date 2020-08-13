@@ -532,10 +532,16 @@ footer .footer_list {
 }
 
 footer .footer_copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #074da2;
   color: white;
-  text-align: center;
   line-height: 40px;
+  padding: 0px 40px;
 }
 
 /* The side navigation menu */
@@ -661,7 +667,8 @@ footer .footer_copyright {
   text-align: center;
   font-size: 12px;
   padding: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 40px;
+  background-color: white;
 }
 
 .programs {
@@ -731,6 +738,8 @@ footer .footer_copyright {
 
 .studentsview_container {
   padding-top: 60px;
+  background-color: white;
+  padding-bottom: 1px;
 }
 
 .studentsview_container .studentsview_header {
