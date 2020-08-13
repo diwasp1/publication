@@ -3,8 +3,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff;
+    // background-color: #ffffff;
     overflow-x: hidden;
+    background-color: #eff0f5;
 }
 
 a,
@@ -24,6 +25,12 @@ a:hover{
 }
 
 /* topbar  */
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
 
 .mobile_topbar{
     display: flex;
@@ -150,13 +157,13 @@ a:hover{
 
 
 nav{
-    height: 40px;
+    height: 53px;
     margin-top: 0;
-    background-color: #074da2;
+    background-color: #008fd5;
 
 
     a{
-        line-height: 40px;
+        line-height: 53px;
         color: white;
         padding: 5px 10px;
         // border: 1px solid black;
@@ -402,7 +409,7 @@ aside {
 // follow
 
 .payment_method {
-
+    background-color: white;
     .payment{
         text-align: center;
         border-right: 2px solid #6d6d6f;
@@ -571,7 +578,10 @@ footer{
     text-transform: uppercase;
     border-bottom: 2px solid black;
     text-align: center;
-    padding:60px 0px 30px 0;
+    padding:40px 0px 30px 0;
+    background-color: white;
+    margin-top: 30px;
+    
     .nav{
         display: flex;
         justify-content: space-around;
@@ -588,7 +598,9 @@ footer{
 }
 
 .book_list_container{
-    padding: 50px 10px;
+    padding: 40px 10px;
+    background-color: white;
+    margin-bottom: 30px;
     .book_list_title{
         font-size: 16px;
         color: #f5921d;
@@ -854,67 +866,92 @@ footer{
 
 
 
-// single book 
-// .singlebook_categories_container{
-//     .singlebook_categories_title{
-//         font-size: 25px;
-//         text-transform: initial;
-//         font-weight: bold;
-//     }
-//     .singlebook_categories_list{
-//         font-size: 18px;
-//         li{ 
-//             padding: 5px 0;
-//             a{
-//                 border-bottom: 1px solid black;
-//                 padding-bottom: 10px;
-                
-//         }
-            
-//         }
-//     }
-// }
+//single book
+
+
+    .singlebook_container{
+        background-color: white;
+        padding: 20px 20px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+
+
 
 .singlebook_image{
-    margin-bottom: 10px;
+
+  .singlebook_image_cont{
+    overflow: hidden;
+    height: 330px;
+    width: 330px;
+    text-align: center;
+
+    img{
+        display: inline-block;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+  }
+
 }
-.singlebook_multi_img{
-    .slick-slide {
-        margin-right: 10px;
-        height: 500px;
+
+.singlebook_multi_image_cont{
+
+    width: 52px;
+    height: 52px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    text-align: center;
+
+    img{
+        width: auto;
+        height: auto;
+        max-width: 50px;
+        max-height: 50px;
+        margin: auto;
     }
 }
 
 .singlebook_detail{
+    margin-left: 20px;
     .singlebook_title{
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 22px;
+        font-weight: normal;
         margin-bottom: 10px;
     }
     .singlebook_author{
         color: #6d6d6f;
         margin-bottom: 20px;
         text-transform: initial;
+        font-size: 12px;
     }
     .singlebook_description{
         color: #6d6d6f;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .singlebook_price{
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
-        margin-bottom: 30px;
-        color: #ed6d26;
+        margin-bottom: 60px;
+        color: #f57224;
         border-bottom: 1px solid #6d6d6f;;
     }
 
     .singlebook_btn{
         a{
-            border-radius: 3px;
+            border-radius: 2px;
             padding: 10px 20px;
             margin-right: 20px;
             border: 1px solid #074da2;
             color: #074da2;
+            cursor: pointer;
+            transition: all .3s ease-out;
+            
         }
     }
 }
@@ -1046,6 +1083,7 @@ footer{
     }
 
     .payment_method {
+        
 
         .payment{
             border-right:none;

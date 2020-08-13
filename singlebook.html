@@ -77,14 +77,14 @@
         <nav>
             <div class="container-fluid">
             <ul  class="nav_bar">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="books_video.html">Books</a></li>
-                <li><a href="books_video.html">Videos</a></li>
-                <li><a href="">Authors</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <!-- <li><a href="">Authors</a></li> -->
                 <li><a href="products.html">Products</a></li>
-                <li><a href="">Price list</a></li>
-                <li><a href="">Offer</a></li>
+                <!-- <li><a href="">Price list</a></li> -->
+                <!-- <li><a href="">Offer</a></li> -->
                 <li><a href="">Publish with Us</a></li>
             </ul>
         </div>
@@ -107,40 +107,82 @@
  
 
     </header>
+    <div class="container ">
 
-    <div class="container">
-        <div class="row">
+        <div class="bread_container">
+            <ul class="bread">
+                <li><a href="">Home &gt; </a></li>
+                <li><a href="">Engineering Entrances &gt;</a></li>
+                <li><a href="">JEE Main And Advanced </a></li>
+            </ul>
+        </div>
 
-            <div class="col-6"> 
+        <div class="row singlebook_container">
+
+            <div class="col-12 col-md-6 col-xl-5"> 
+
                         <div class="singlebook_image">
+                            
                             <div>
-                                <img class="img-fluid "  src="img/bio.jpg" alt=""> 
+                                <div class="singlebook_image_cont">
+                                    <img src="img/bio.jpg" alt="">
+                                </div>
                             </div>
                             <div>
-                                <img class="img-fluid"  src="img/chemistry.jpg" alt="">
+                                <div class="singlebook_image_cont">
+                                    <img  src="img/chemistry.jpg" alt="">
+                                </div>
                             </div>
                             <div>
-                                <img class="img-fluid"  src="img/english.jpg" alt="">
+                                <div class="singlebook_image_cont">
+                                    <img src="img/english.jpg" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="singlebook_image_cont">
+                                    <img src="img/english.jpg" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="singlebook_image_cont">
+                                    <img src="img/english.jpg" alt="">
+                                </div>
                             </div>
                         </div>
               
                 <div class="singlebook_multi_img">
 
                     <div>
-                        <img class="img-fluid "  src="img/bio.jpg" alt=""> 
+                        <div class="singlebook_multi_image_cont">
+                            <img src="img/bio.jpg" alt=""> 
+                        </div>
                     </div>
                     <div>
-                        <img class="img-fluid"  src="img/chemistry.jpg" alt="">
+                        <div class="singlebook_multi_image_cont">
+                            <img src="img/chemistry.jpg" alt="">
+                        </div>
                     </div>
                     <div>
-                        <img class="img-fluid"  src="img/english.jpg" alt="">
+                        <div class="singlebook_multi_image_cont">
+                            <img src="img/english.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="singlebook_multi_image_cont">
+                            <img src="img/english.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="singlebook_multi_image_cont">
+                            <img src="img/english.jpg" alt="">
+                        </div>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="singlebook_detail">
                     <div class="singlebook_title">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -162,6 +204,7 @@
         </div>
 
     </div>
+
 
     <div class="banner">
         <div class="container">
@@ -362,25 +405,24 @@
     <script src="js/app.js" defer></script>
 
    <script>
-
-$('.singlebook_image').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.singlebook_multi_img'
-});
-
-$('.singlebook_multi_img').slick({
-  slidesToShow: 3,
-  slidesToScroll: 0,
-  asNavFor: '.singlebook_image',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
 		
-			
+        $('.singlebook_image').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.singlebook_multi_img'
+        });
+
+        $('.singlebook_multi_img').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.singlebook_image',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+		
     </script>
 </body>
 </html>
