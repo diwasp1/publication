@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Book</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6"> 
+                        <div class="singlebook_image">
+                            <div>
+                                <img class="img-fluid "  src="img/bio.jpg" alt=""> 
+                            </div>
+                            <div>
+                                <img class="img-fluid"  src="img/chemistry.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid"  src="img/english.jpg" alt="">
+                            </div>
+                        </div>
+              
+                <div class="singlebook_multi_img">
+
+                    <div>
+                        <img class="img-fluid "  src="img/bio.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="img-fluid"  src="img/chemistry.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid"  src="img/english.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-6">
+                <div class="singlebook_detail">
+                    <div class="singlebook_title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="singlebook_author">
+                        Manchester United.
+                    </div>
+                    <div class="singlebook_description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sed eos corporis, labore impedit eum illo quaerat, ipsam, accusantium illum ipsum debitis natus laudantium quia libero dolor? Similique, rerum assumenda.
+                    </div>
+                    <div class="singlebook_price">
+                        RS. 2020.00
+                    </div>
+                    <div class="singlebook_btn">
+                        <a href="" >continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+
+    <script src="js/app.js" defer></script>
+
+   <script>
+
+$('.singlebook_image').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.singlebook_multi_img'
+});
+
+$('.singlebook_multi_img').slick({
+  slidesToShow: 3,
+  slidesToScroll: 0,
+  asNavFor: '.singlebook_image',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+		
+			
+    </script>
+</body>
+</html>

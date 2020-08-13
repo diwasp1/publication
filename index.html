@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    
+
+
+</head>
+<body>
+
+    <header>
+
+        <div class="mobile_topbar">
+            <div class="mobile_contact">
+               <a href="">Contact Us</a> 
+            </div>
+            <div class="mobile_links">
+                   <ul >
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest"></i></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <article class="top_bar_color">
+
+            <div class="top_bar container ">
+
+                <div class="menu_burger">
+                    <a   onclick="openNav()"><i class="fas fa-bars"></i></a>
+                </div>
+
+            <div class="logo_container">
+                <ul class="company_logo">
+                    <li><a href="landing.html"><img src="img/logo.png" alt="…"></a></li>
+                    <li><a id="logo" href="landing.html">publication</a></li>
+                </ul>
+            </div>
+
+            <div class="topbar_sear">
+                <input type="search" placeholder="Search by ISBN, Title, Author, Keyword">
+                <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+            </div>
+          
+            <div class="cart_container">
+                <!-- <div class="top_cart">
+                    <span><a href=""><i class="fas fa-shopping-cart"></i></a></span>
+                    <span> <a class="cart_hid" href="">Cart</a></span>
+                </div> -->
+                <div class="top_login">
+                    <a href="">
+                        <span><i class="far fa-user"></i></span>
+                        <span class="cart_hid">Login</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="topbar_search">
+            <input type="search" placeholder="Search by ISBN, Title, Author, Keyword">
+            <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+        </div>
+        </article>
+
+        <nav>
+            <div class="container-fluid">
+            <ul  class="nav_bar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="books_video.html">Books</a></li>
+                <li><a href="books_video.html">Videos</a></li>
+                <li><a href="">Authors</a></li>
+                <li><a href="index.html">Distrubtion</a></li>
+                <li><a href="">Price list</a></li>
+                <li><a href="">Offer</a></li>
+                <li><a href="">Publish with Us</a></li>
+            </ul>
+        </div>
+        </nav>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="#">About us</a>
+    <a href="books_video.html">Books</a>
+    <a href="books_video.html">Videos</a>
+    <a href="#">Authors</a>
+    <a href="index.html">Distrubtion</a>
+    <a href="">Price list</a>
+    <a href="">Offer</a>
+    <a href="">Publish with Us</a>
+  </div>
+
+ 
+
+    </header>
+
+
+    <div class="container-fluid book_filter">
+
+            <div class="filter_title" data-toggle="collapse" data-target="#filter_list">
+                <a><i class="fas fa-filter"></i>Book Filter</a>
+            </div>
+      
+        <div class="collapse" id="filter_list"> 
+            <aside>
+                <div class="aside_header">
+                    Engineering Entrances
+                </div>
+                
+                <div class="aside_drop" data-toggle="collapse" data-target="#jee_main">
+                    <span>JEE Main and Advanced </span> 
+                    <span > &#43; </span>
+                </div>
+                <div class="collapse" id="jee_main"> 
+                    <div class="aside_list">Textbooks</div>
+                    <div class="aside_list">Study Guides</div>
+                    <div class="aside_list">Classic Text Series</div>
+                    <div class="aside_list">practice Sets</div>
+                </div>
+    
+                    <div class="aside_list" data-toggle="collapse" data-target="#textbook">
+                        <span>Textbooks</span> 
+                        <span class="dropicon" >&blacktriangledown;</span>
+                    </div>
+                    <div class="collapse" id="textbook"> 
+                        <div class="aside_list">Textbooks</div>
+                        <div class="aside_list">Study Guides</div>
+                    </div>
+                    <div class="aside_list" data-toggle="collapse" data-target="#study_guides">
+                        <span>Study Guides</span> 
+                        <span class="dropicon">&blacktriangledown;</span>
+                    </div>
+                    <div class="collapse" id="study_guides"> 
+                        <div class="aside_list">Textbooks</div>
+                        <div class="aside_list">Study Guides</div>
+                    </div>
+                    <div class="aside_list">Classic Text Series</div>
+                    <div class="aside_list">practice Sets</div>
+                    <div class="aside_list" data-toggle="collapse" data-target="#problem_books">
+                        <span>Problem Books</span> 
+                        <span class="dropicon">&blacktriangledown;</span>
+                    </div>
+                    <div class="collapse" id="problem_books"> 
+                        <div class="aside_list">Textbooks</div>
+                        <div class="aside_list">Study Guides</div>
+                    </div>
+                    <div class="aside_list">Daily Practice Problem</div>
+                    <div class="aside_list">Solved and Unsolved Papers</div>
+                    <div class="aside_list">40 Days Crash Courses</div>
+                    <div class="aside_list">Foundation Course</div>
+                    <div class="aside_list">Hindi Medium Books</div>
+                   
+                    <div class="aside_drop1" data-toggle="collapse" data-target="#master_ncret">
+                        <span>Master the NCERT </span> 
+                        <span class="dropicon"> &#43; </span>
+                    </div>
+                    <div class="collapse" id="master_ncret"> 
+                        <div class="aside_list">Textbooks</div>
+                        <div class="aside_list">Study Guides</div>
+                        <div class="aside_list">Classic Text Series</div>
+                        <div class="aside_list">practice Sets</div>
+                    </div>
+                    <div class="aside_drop1" data-toggle="collapse" data-target="#others_entrances">
+                        <span>Others Engineering Entrances </span> 
+                        <span class="dropicon"> &#43; </span>
+                    </div>
+                    <div class="collapse" id="others_entrances"> 
+                        <div class="aside_list">Textbooks</div>
+                        <div class="aside_list">Study Guides</div>
+                        <div class="aside_list">Classic Text Series</div>
+                        <div class="aside_list">practice Sets</div>
+                    </div>
+            </aside>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-3 asider">
+                <aside>
+                    <div class="aside_header">
+                        Engineering Entrances
+                    </div>
+                    
+                    <div class="aside_drop" data-toggle="collapse" data-target="#jee_main">
+                        <span>JEE Main and Advanced </span> 
+                        <span > &#43; </span>
+                    </div>
+                    <div class="collapse" id="jee_main"> 
+                        <div class="aside_list">Textbooks</div>
+                        <div class="aside_list">Study Guides</div>
+                        <div class="aside_list">Classic Text Series</div>
+                        <div class="aside_list">practice Sets</div>
+                    </div>
+
+                        <div class="aside_list" data-toggle="collapse" data-target="#textbook">
+                            <span>Textbooks</span> 
+                            <span>&blacktriangledown;</span>
+                        </div>
+                        <div class="collapse" id="textbook"> 
+                            <div class="aside_list">Textbooks</div>
+                            <div class="aside_list">Study Guides</div>
+                        </div>
+                        <div class="aside_list" data-toggle="collapse" data-target="#study_guides">
+                            <span>Study Guides</span> 
+                            <span>&blacktriangledown;</span>
+                        </div>
+                        <div class="collapse" id="study_guides"> 
+                            <div class="aside_list">Textbooks</div>
+                            <div class="aside_list">Study Guides</div>
+                        </div>
+                        <div class="aside_list">Classic Text Series</div>
+                        <div class="aside_list">practice Sets</div>
+                        <div class="aside_list" data-toggle="collapse" data-target="#problem_books">
+                            <span>Problem Books</span> 
+                            <span>&blacktriangledown;</span>
+                        </div>
+                        <div class="collapse" id="problem_books"> 
+                            <div class="aside_list">Textbooks</div>
+                            <div class="aside_list">Study Guides</div>
+                        </div>
+                        <div class="aside_list">Daily Practice Problem</div>
+                        <div class="aside_list">Solved and Unsolved Papers</div>
+                        <div class="aside_list">40 Days Crash Courses</div>
+                        <div class="aside_list">Foundation Course</div>
+                        <div class="aside_list">Hindi Medium Books</div>
+                       
+                        <div class="aside_drop1" data-toggle="collapse" data-target="#master_ncret">
+                            <span>Master the NCERT </span> 
+                            <span > &#43; </span>
+                        </div>
+                        <div class="collapse" id="master_ncret"> 
+                            <div class="aside_list">Textbooks</div>
+                            <div class="aside_list">Study Guides</div>
+                            <div class="aside_list">Classic Text Series</div>
+                            <div class="aside_list">practice Sets</div>
+                        </div>
+                        <div class="aside_drop1" data-toggle="collapse" data-target="#others_entrances">
+                            <span>Others Engineering Entrances </span> 
+                            <span > &#43; </span>
+                        </div>
+                        <div class="collapse" id="others_entrances"> 
+                            <div class="aside_list">Textbooks</div>
+                            <div class="aside_list">Study Guides</div>
+                            <div class="aside_list">Classic Text Series</div>
+                            <div class="aside_list">practice Sets</div>
+                        </div>
+                </aside>
+            </div>
+
+            <div class="col-12  col-md-9">
+                <main>
+                    <div class="bread_container">
+                        <ul class="bread">
+                            <li><a href="">Home &gt; </a></li>
+                            <li><a href="">Engineering Entrances &gt;</a></li>
+                            <li><a href="">JEE Main And Advanced </a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-md-4 col-6">
+                           <div class="book_list">
+                               <div class="book_img">
+                                    <img class="img-fluid" src="img/physics.jpg" alt="">
+                               </div>
+                                <div class="book_price">
+                                    <div><i class="fas fa-rupee-sign"></i> 1340</div>
+                                    <div>offer price <i class="fas fa-rupee-sign"></i> <span>938</span> </div>
+                                </div>
+                                <div class="book_description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                </div>
+                                <div class="book_button">    
+                                    <!-- <a class="btn_explore" href=""> <i class="fas fa-search"></i> EXPLORE</a> -->
+                                    
+                                    <a class="btn_addcart" href=""> <i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                                    <a class="btn_like" href=""> <i class="far fa-heart"></i> </a>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="col-md-4 col-6">
+                            <div class="book_list">
+                                <div class="book_img">
+                                     <img class="img-fluid" src="img/chemistry.jpg" alt="">
+                                </div>
+                                 <div class="book_price">
+                                     <div><i class="fas fa-rupee-sign"></i> 1340</div>
+                                     <div>offer price <i class="fas fa-rupee-sign"></i> <span>938</span> </div>
+                                 </div>
+                                 <div class="book_description">
+                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                 </div>
+                                 <div class="book_button">    
+                                     <!-- <a class="btn_explore" href=""> <i class="fas fa-search"></i> EXPLORE</a> -->
+                                     
+                                     <a class="btn_addcart" href=""> <i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                                     <a class="btn_like" href=""> <i class="far fa-heart"></i> </a>
+                                 </div>
+                            </div>
+                         </div>
+
+                         <div class="col-md-4 col-6">
+                            <div class="book_list">
+                                <div class="book_img">
+                                     <img class="img-fluid" src="img/bio.jpg" alt="">
+                                </div>
+                                 <div class="book_price">
+                                     <div><i class="fas fa-rupee-sign"></i> 1340</div>
+                                     <div>offer price <i class="fas fa-rupee-sign"></i> <span>938</span> </div>
+                                 </div>
+                                 <div class="book_description">
+                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                 </div>
+                                 <div class="book_button">    
+                                     <!-- <a class="btn_explore" href=""> <i class="fas fa-search"></i> EXPLORE</a> -->
+                                     
+                                     <a class="btn_addcart" href=""> <i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                                     <a class="btn_like" href=""> <i class="far fa-heart"></i> </a>
+                                 </div>
+                            </div>
+                         </div>
+
+                       
+                       
+
+                         
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="next_page">
+       
+
+    </div> -->
+
+    <div class="banner">
+        <div class="container">
+         <div class="row">
+            <div class="col-6">
+
+                <div class="banner_heading1">
+                        Study Smarter 
+                </div>
+                <div class="banner_heading2">
+                    with our learning digital product
+            </div>
+
+                <div class="banner_discription">
+                        Enjoy a better reading experience anytime, anywhere!
+                </div>  
+
+                <div class="banner_btn">
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-6">
+
+                <div class="qr_code">
+                    <img src="img/qr.png" alt="">
+                </div>
+                <div class="qr_download">
+                    Download App
+                </div>
+                <div class="badge">
+                    <div>
+                        <a href=""><img class="google_play" src="img/google-play-badge.png" alt=""></a>                       
+                    </div>
+                    <div>
+                        <a href=""><img class="app_store" src="img/512x512.png" alt=""></a>    
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="col-3">
+
+            </div> -->
+        </div>
+        </div>
+    </div>
+
+    <div class="payment_method">
+        <div class="container">
+        <div class="row">
+            <div class="col-12  col-lg-4 col-md-6">
+                <div class="payment">
+
+                <div class="payment_header">
+                    Payment Method
+                </div>
+                <div class="payment_links">
+                    <div class="links_logo"> 
+                        <a href=""><img src="img/khalti-logo.png" alt=""></a>
+                    </div>
+                    <div class="links_logo">
+                        <a href=""><img src="img/esewa.png" alt=""></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="follow">
+                    <div class="follow_header">
+                        Follow us on social <br> media
+                    </div>
+                    <div >
+                        <ul class="follow_links">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-pinterest"></i></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-12">
+            <div class="subscribe_us">
+                <div class="subscribe_header">
+                    Never miss out on our most popular deals
+                </div>
+                <div class="email_us">
+                    <div>
+                        <input class="input_email" type="email" placeholder="email address">
+                    </div>
+                    <div class="subscribe_btn">
+                        <a href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+   
+    <footer>
+        <div class="container">
+            <div class="row footer_box">
+                <div class="col-12 col-md-2">
+                    <div class = footer_logo>
+                        <a href=""><img src="img/logo.png" alt="…"></a>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-2">
+                    <div class = footer_explore>
+                        <div class="footer_header">
+                            Explore
+                        </div>
+                        <div>
+                            <ul class="footer_list">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Publish with Us</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class = footer_programs>
+                        <div class="footer_header">
+                            Programs
+                        </div>
+                        <div>
+                            <ul class="footer_list">
+                                <li><a href="">Books</a></li>
+                                <li><a href="">Videos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3" id="footer_list_category">
+                    <div class = footer_categories>
+                        <div class="footer_header">
+                            Categories
+                        </div>
+                        <div>
+                            <ul class="footer_list" >
+                                <li> <a href="">Engineering Entrances</a></li>
+                                <li><a href="">Medical Entrances</a></li>
+                                <li><a href="">School Curriculum</a><li>
+                                <li><a href="">Competitive Exams</a> </li>
+                                <li><a href="">Government Recruitments</a> </li>
+                                <li><a href="">ITI & Polytechnic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3">
+                    <div class = footer_terms>
+                        <div class="footer_header">
+                            Terms of Use
+                        </div>
+                        <div>
+                            <ul class="footer_list">
+                                <li><a href="">Terms & Conditions</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Supply & Return Method</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_copyright">
+            <div>
+                Copy Right &copy; 2020 digital publication
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
