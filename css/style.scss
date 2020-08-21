@@ -6,6 +6,8 @@ body{
     // background-color: #ffffff;
     overflow-x: hidden;
     background-color: #eff0f5;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 a,
@@ -124,9 +126,9 @@ header{
         .nav_search{
             background-color: #074da2 ;
             color: white;
-            padding: 9px 15px;
+            padding: 8px 15px;
             border-radius: 3px;
-            margin-left: -55px;
+            margin-left: -53px;
 
         }
     }
@@ -160,6 +162,7 @@ nav{
     height: 53px;
     margin-top: 0;
     background-color: #008fd5;
+    font-size: 16px;
 
 
     a{
@@ -193,7 +196,7 @@ nav{
         }
         .nav_search{
             margin-left: -5px;
-            background-color: #ed1b24;
+            background-color: #f04349;
             padding: 6px;
         }
     }
@@ -207,7 +210,7 @@ aside {
     .aside_header {
         padding: 10px;
         margin-top: 20px;
-        background: linear-gradient(45deg,#ec2c43, #f5921d);
+        background: linear-gradient(45deg,#f04349, #f5921d);
         color: white;
     }
 
@@ -219,7 +222,7 @@ aside {
         justify-content: space-between;
 
         span:nth-child(2) {
-            color: #f5921d;
+            color: #f04349;
             cursor: pointer;
          }
     }
@@ -240,14 +243,14 @@ aside {
     .aside_drop1 {
         padding: 10px;
         border-bottom: 1px solid;
-        border-image-source: linear-gradient(45deg,#ec2c43, #f5921d);
+        border-image-source: linear-gradient(45deg,#f04349, #f5921d);
         border-image-slice: 1;
         color:#6d6d6f;
         display: flex;
         justify-content: space-between;
 
         span:nth-child(2) {
-            color: #f5921d;
+            color: #f04349;
             cursor: pointer;
          }
     } 
@@ -297,7 +300,7 @@ aside {
         color: #6d6d6f;
 
         span{
-            color: #ed6d26;
+            color: #f04349;
         }
     }
 
@@ -322,16 +325,16 @@ aside {
         //     padding: 0px 1em;
         // }
         .btn_like {
-            color:#ed6d26; 
+            color: #f04349;
             font-size: 20px;
             
         }
         .btn_like:hover{
-            color: #ee3d3d;
+            color: #f04349;
         }
         .btn_addcart {
 
-            background-color: #ed6d26;
+            background-color: #f04349;
             text-align: center;
             border-radius: 2px;
             color: white;
@@ -339,7 +342,7 @@ aside {
             
         }
         .btn_addcart:hover{
-            background-color: #ee3d3d;
+            background-color: #f04349
         }
 
     }
@@ -478,10 +481,10 @@ aside {
             .subscribe_btn{
                 
                 a{
-                    color: #ed6d26;
+                    color: #f04349;
                     border: 1px solid black;
                     border-radius: 5px;
-                    border-color: #ed6d26;
+                    border-color: #f04349;
                     padding: 10px 20px;
                     margin-left: 10px;
                 }      
@@ -605,7 +608,7 @@ footer{
     margin-bottom: 30px;
     .book_list_title{
         font-size: 16px;
-        color: #f5921d;
+        color: #f04349;
         border-bottom: 1px solid #6d6d6f;
         display: inline-block;
     }
@@ -691,13 +694,13 @@ footer{
     .book_container_btn{
         a{
             padding: 3px 20px;
-            border: 1px solid #ed6d26;
+            border: 1px solid #f04349;
             border-radius: 3px;
-            color: #ed6d26;
+            color: #f04349;
         }
         a:hover{
-            color: #ec2c43;
-            border-color: #ec2c43;
+            color: #f04349;
+            border-color: #f04349;
         }
     }
 
@@ -773,7 +776,7 @@ footer{
         }
     }
     .testimonial_bio{
-        color: #f5921d;
+        color: #6d6d6f;
         margin: 0 20%;
 
     }
@@ -804,6 +807,10 @@ footer{
 
 // my_account
 
+.myaccount_body{
+    background-color: #ffffff;
+}
+
 .my_account_header_cont{
     background-color: #52b4e1;
     text-align: center;
@@ -812,12 +819,14 @@ footer{
 
     .my_account_header{
         font-size: 30px;
+        margin-bottom: 5px;
     }
 
     .myaccount_bread{
         display: flex;
         justify-content: center;
         font-size: 14px;
+        margin-bottom: 5px;
         div{
             padding: 0 5px;
         }
@@ -847,7 +856,7 @@ footer{
         a:hover{
             border-bottom: 2px solid #074da2;
             color: black;
-            transition: all .4s ease;
+            // transition: all .4s ease;
         }
     }
     .nav-pills .nav-link.active{
@@ -869,6 +878,32 @@ footer{
     }
 }
 
+.dashboard_box_container {
+
+    margin-top: 40px;
+
+    .dashboard_box{
+        text-align: center;
+        border: 1px solid rgba(136,136,136,.12);
+        padding: 10px 0px;
+        text-transform: uppercase;
+        color: rgba(71,71,71,.8);
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .dashboard_box:hover{
+        background-color: #f9f9f9;
+    }
+  
+    .dashboard_box_icon{
+        font-size: 50px;
+        color: #d0d0d0;
+    }
+    .dashboard_box_icon:hover{
+        color: #52b4e1;
+    }
+
+}
 
 
 //single book
@@ -943,7 +978,7 @@ footer{
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 60px;
-        color: #f57224;
+        color: #f04349;
         border-bottom: 1px solid #6d6d6f;;
     }
 

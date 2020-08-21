@@ -5,6 +5,7 @@ body {
           box-sizing: border-box;
   overflow-x: hidden;
   background-color: #eff0f5;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a,
@@ -146,9 +147,9 @@ header {
 .topbar_sear .nav_search {
   background-color: #074da2;
   color: white;
-  padding: 9px 15px;
+  padding: 8px 15px;
   border-radius: 3px;
-  margin-left: -55px;
+  margin-left: -53px;
 }
 
 .cart_container .top_login a {
@@ -166,6 +167,7 @@ nav {
   height: 53px;
   margin-top: 0;
   background-color: #008fd5;
+  font-size: 16px;
 }
 
 nav a {
@@ -202,14 +204,14 @@ nav .nav_bar input {
 
 nav .nav_bar .nav_search {
   margin-left: -5px;
-  background-color: #ed1b24;
+  background-color: #f04349;
   padding: 6px;
 }
 
 aside .aside_header {
   padding: 10px;
   margin-top: 20px;
-  background: linear-gradient(45deg, #ec2c43, #f5921d);
+  background: linear-gradient(45deg, #f04349, #f5921d);
   color: white;
 }
 
@@ -226,7 +228,7 @@ aside .aside_drop {
 }
 
 aside .aside_drop span:nth-child(2) {
-  color: #f5921d;
+  color: #f04349;
   cursor: pointer;
 }
 
@@ -250,7 +252,7 @@ aside .aside_list {
 aside .aside_drop1 {
   padding: 10px;
   border-bottom: 1px solid;
-  border-image-source: linear-gradient(45deg, #ec2c43, #f5921d);
+  border-image-source: linear-gradient(45deg, #f04349, #f5921d);
   border-image-slice: 1;
   color: #6d6d6f;
   display: -webkit-box;
@@ -262,7 +264,7 @@ aside .aside_drop1 {
 }
 
 aside .aside_drop1 span:nth-child(2) {
-  color: #f5921d;
+  color: #f04349;
   cursor: pointer;
 }
 
@@ -308,7 +310,7 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .book_list .book_price span {
-  color: #ed6d26;
+  color: #f04349;
 }
 
 .book_list .book_description {
@@ -330,16 +332,16 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .book_list .book_button .btn_like {
-  color: #ed6d26;
+  color: #f04349;
   font-size: 20px;
 }
 
 .book_list .book_button .btn_like:hover {
-  color: #ee3d3d;
+  color: #f04349;
 }
 
 .book_list .book_button .btn_addcart {
-  background-color: #ed6d26;
+  background-color: #f04349;
   text-align: center;
   border-radius: 2px;
   color: white;
@@ -347,7 +349,7 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .book_list .book_button .btn_addcart:hover {
-  background-color: #ee3d3d;
+  background-color: #f04349;
 }
 
 .banner {
@@ -501,10 +503,10 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .payment_method .subscribe_us .email_us .subscribe_btn a {
-  color: #ed6d26;
+  color: #f04349;
   border: 1px solid black;
   border-radius: 5px;
-  border-color: #ed6d26;
+  border-color: #f04349;
   padding: 10px 20px;
   margin-left: 10px;
 }
@@ -631,7 +633,7 @@ footer .footer_copyright {
 
 .book_list_container .book_list_title {
   font-size: 16px;
-  color: #f5921d;
+  color: #f04349;
   border-bottom: 1px solid #6d6d6f;
   display: inline-block;
 }
@@ -708,14 +710,14 @@ footer .footer_copyright {
 
 .book_container_btn a {
   padding: 3px 20px;
-  border: 1px solid #ed6d26;
+  border: 1px solid #f04349;
   border-radius: 3px;
-  color: #ed6d26;
+  color: #f04349;
 }
 
 .book_container_btn a:hover {
-  color: #ec2c43;
-  border-color: #ec2c43;
+  color: #f04349;
+  border-color: #f04349;
 }
 
 .categories_banner {
@@ -774,7 +776,7 @@ footer .footer_copyright {
 }
 
 .testimonials_container .testimonial_bio {
-  color: #f5921d;
+  color: #6d6d6f;
   margin: 0 20%;
 }
 
@@ -798,6 +800,10 @@ footer .footer_copyright {
   display: initial;
 }
 
+.myaccount_body {
+  background-color: #ffffff;
+}
+
 .my_account_header_cont {
   background-color: #52b4e1;
   text-align: center;
@@ -807,6 +813,7 @@ footer .footer_copyright {
 
 .my_account_header_cont .my_account_header {
   font-size: 30px;
+  margin-bottom: 5px;
 }
 
 .my_account_header_cont .myaccount_bread {
@@ -817,6 +824,7 @@ footer .footer_copyright {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .my_account_header_cont .myaccount_bread div {
@@ -850,8 +858,6 @@ footer .footer_copyright {
 .myaccount_tab_header #pills-tab a:hover {
   border-bottom: 2px solid #074da2;
   color: black;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
 .myaccount_tab_header .nav-pills .nav-link.active {
@@ -871,6 +877,33 @@ footer .footer_copyright {
 
 .myaccount_dashboard_header a {
   border-bottom: 1px solid #c7c7c7;
+}
+
+.dashboard_box_container {
+  margin-top: 40px;
+}
+
+.dashboard_box_container .dashboard_box {
+  text-align: center;
+  border: 1px solid rgba(136, 136, 136, 0.12);
+  padding: 10px 0px;
+  text-transform: uppercase;
+  color: rgba(71, 71, 71, 0.8);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.dashboard_box_container .dashboard_box:hover {
+  background-color: #f9f9f9;
+}
+
+.dashboard_box_container .dashboard_box_icon {
+  font-size: 50px;
+  color: #d0d0d0;
+}
+
+.dashboard_box_container .dashboard_box_icon:hover {
+  color: #52b4e1;
 }
 
 .singlebook_container {
@@ -939,7 +972,7 @@ footer .footer_copyright {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 60px;
-  color: #f57224;
+  color: #f04349;
   border-bottom: 1px solid #6d6d6f;
 }
 
