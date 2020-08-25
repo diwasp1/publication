@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: white;
   overflow-x: hidden;
-  background-color: #eff0f5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arsenal';
 }
 
 a,
@@ -41,7 +43,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #fafafa;
-  line-height: 23px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .mobile_topbar .mobile_contact a {
@@ -80,7 +83,7 @@ header {
 }
 
 .top_bar_color {
-  background: linear-gradient(45deg, #074da2, #008fd5);
+  background-color: #fafafa;
 }
 
 .top_bar {
@@ -92,9 +95,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: #000;
   margin-bottom: 0;
-  padding: 10px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .top_bar ul {
@@ -103,7 +106,7 @@ header {
 
 .top_bar a,
 .top_bar li {
-  color: white;
+  color: #000;
 }
 
 .top_bar .company_logo {
@@ -127,6 +130,10 @@ header {
 
 .top_bar .company_logo img {
   height: 45px;
+}
+
+.top_bar .company_logo #logo {
+  color: #074da2;
 }
 
 .topbar_sear {
@@ -153,7 +160,7 @@ header {
 }
 
 .cart_container .top_login a {
-  color: white;
+  color: #000;
   border-radius: 3px;
   padding: 5px 10px;
 }
@@ -161,12 +168,13 @@ header {
 .cart_container .top_login a:hover {
   background-color: white;
   color: black;
+  border: 1px solid #074da2;
 }
 
 nav {
   height: 53px;
   margin-top: 0;
-  background-color: #008fd5;
+  background-color: #0186ce;
   font-size: 16px;
 }
 
@@ -211,8 +219,14 @@ nav .nav_bar .nav_search {
 aside .aside_header {
   padding: 10px;
   margin-top: 20px;
-  background: linear-gradient(45deg, #f04349, #f5921d);
+  border: 1px solid #0186ce;
+  color: #0186ce;
+}
+
+aside .aside_header:hover {
+  background-color: #074da2;
   color: white;
+  border: none;
 }
 
 aside .aside_drop {
@@ -228,13 +242,13 @@ aside .aside_drop {
 }
 
 aside .aside_drop span:nth-child(2) {
-  color: #f04349;
+  color: #0186ce;
   cursor: pointer;
 }
 
 aside .dropicon {
   cursor: pointer;
-  color: blue;
+  color: #0186ce;
 }
 
 aside .aside_list {
@@ -252,7 +266,7 @@ aside .aside_list {
 aside .aside_drop1 {
   padding: 10px;
   border-bottom: 1px solid;
-  border-image-source: linear-gradient(45deg, #f04349, #f5921d);
+  border-image-source: linear-gradient(45deg, #074da2, #0186ce);
   border-image-slice: 1;
   color: #6d6d6f;
   display: -webkit-box;
@@ -264,7 +278,7 @@ aside .aside_drop1 {
 }
 
 aside .aside_drop1 span:nth-child(2) {
-  color: #f04349;
+  color: #0186ce;
   cursor: pointer;
 }
 
@@ -310,7 +324,7 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .book_list .book_price span {
-  color: #f04349;
+  color: #074da2;
 }
 
 .book_list .book_description {
@@ -332,24 +346,26 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .book_list .book_button .btn_like {
-  color: #f04349;
+  color: #0186ce;
   font-size: 20px;
 }
 
 .book_list .book_button .btn_like:hover {
-  color: #f04349;
+  color: #074da2;
 }
 
 .book_list .book_button .btn_addcart {
-  background-color: #f04349;
+  background-color: white;
   text-align: center;
   border-radius: 2px;
-  color: white;
+  color: #0186ce;
   padding: 7px;
+  border: 1px solid #0186ce;
 }
 
 .book_list .book_button .btn_addcart:hover {
-  background-color: #f04349;
+  background-color: #074da2;
+  color: white;
 }
 
 .banner {
@@ -378,7 +394,7 @@ aside .aside_drop1 span:nth-child(2) {
 
 .banner .banner_btn a {
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 25px;
   color: white;
 }
@@ -420,6 +436,7 @@ aside .aside_drop1 span:nth-child(2) {
 
 .payment_method {
   background-color: white;
+  padding: 20px 0;
 }
 
 .payment_method .payment {
@@ -468,11 +485,12 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .payment_method .follow .follow_links a {
-  color: #0188cf;
+  color: #008fd5;
+  font-size: 20px;
 }
 
 .payment_method .follow .follow_links a:hover {
-  color: #074ea3;
+  color: #074da2;
 }
 
 .payment_method .subscribe_us .subscribe_header {
@@ -503,12 +521,16 @@ aside .aside_drop1 span:nth-child(2) {
 }
 
 .payment_method .subscribe_us .email_us .subscribe_btn a {
-  color: #f04349;
-  border: 1px solid black;
+  color: #0186ce;
+  border: 1px solid  #0186ce;
   border-radius: 5px;
-  border-color: #f04349;
   padding: 10px 20px;
   margin-left: 10px;
+}
+
+.payment_method .subscribe_us .email_us .subscribe_btn a:hover {
+  background-color: #074da2;
+  color: white;
 }
 
 footer {
@@ -534,16 +556,11 @@ footer .footer_list {
 }
 
 footer .footer_copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #074da2;
-  color: white;
+  color: #000;
   line-height: 40px;
-  padding: 0px 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* The side navigation menu */
@@ -559,8 +576,7 @@ footer .footer_copyright {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#074da2), to(#008fd5));
-  background: linear-gradient(to bottom, #074da2, #008fd5);
+  background-color: #fafafa;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;
@@ -576,6 +592,7 @@ footer .footer_copyright {
   text-decoration: none;
   font-size: 16px;
   color: white;
+  color: #0186ce;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -583,7 +600,7 @@ footer .footer_copyright {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: black;
+  color: #074da2;
   background-color: white;
 }
 
@@ -633,7 +650,7 @@ footer .footer_copyright {
 
 .book_list_container .book_list_title {
   font-size: 16px;
-  color: #f04349;
+  color: #074da2;
   border-bottom: 1px solid #6d6d6f;
   display: inline-block;
 }
@@ -660,9 +677,14 @@ footer .footer_copyright {
   position: absolute;
   top: 30%;
   left: 15%;
-  color: white;
+  font-family: 'Russo One', sans-serif;
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 1000;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.81);
+  color: #fff;
 }
 
 .programs_container {
@@ -709,19 +731,20 @@ footer .footer_copyright {
 }
 
 .book_container_btn a {
-  padding: 3px 20px;
-  border: 1px solid #f04349;
+  padding: 7px 20px;
+  border: 1px solid #0186ce;
   border-radius: 3px;
-  color: #f04349;
+  color: #0186ce;
 }
 
 .book_container_btn a:hover {
-  color: #f04349;
-  border-color: #f04349;
+  color: white;
+  background-color: #074da2;
 }
 
 .categories_banner {
-  background-image: url("../img/books1.jpg");
+  background-image: url("../img/category.jpg");
+  background-size: cover;
 }
 
 .categories_banner .categories_box_container .categories_box_cont {
@@ -729,13 +752,20 @@ footer .footer_copyright {
 }
 
 .categories_banner .categories_box_container .categories_box {
-  text-align: center;
-  background-color: #f04349;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  padding: 80px 0;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px #e9e7e7;
+          box-shadow: 0px 0px 10px #e9e7e7;
+  border-radius: 10px;
+  height: 200px;
   margin-bottom: 30px;
+}
+
+.categories_banner .categories_box_container .categories_box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 .studentsview_container {
@@ -773,6 +803,8 @@ footer .footer_copyright {
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimonials_container .testimonial_bio {
@@ -793,7 +825,12 @@ footer .footer_copyright {
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
+  color: #074da2;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #074da2;
 }
 
 .slick-slide img {
@@ -805,7 +842,7 @@ footer .footer_copyright {
 }
 
 .my_account_header_cont {
-  background-color: #52b4e1;
+  background-color: #0186ce;
   text-align: center;
   color: white;
   padding: 10px 0;
@@ -903,7 +940,7 @@ footer .footer_copyright {
 }
 
 .dashboard_box_container .dashboard_box_icon:hover {
-  color: #52b4e1;
+  color: #0186ce;
 }
 
 .singlebook_container {
@@ -972,19 +1009,24 @@ footer .footer_copyright {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 60px;
-  color: #f04349;
+  color: #074da2;
   border-bottom: 1px solid #6d6d6f;
 }
 
 .singlebook_detail .singlebook_btn a {
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 10px 20px;
   margin-right: 20px;
-  border: 1px solid #074da2;
-  color: #074da2;
+  border: 1px solid #0186ce;
+  color: #0186ce;
   cursor: pointer;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+}
+
+.singlebook_detail .singlebook_btn a:hover {
+  background-color: #074da2;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -1035,8 +1077,11 @@ footer .footer_copyright {
     display: block;
     font-size: 18px;
   }
+  .menu_burger i {
+    color: #074da2;
+  }
   .menu_burger a:hover {
-    color: black;
+    color: #074da2;
   }
   .asider {
     display: none;

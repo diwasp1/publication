@@ -1,12 +1,16 @@
-
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // background-color: #ffffff;
+    background-color: white;
     overflow-x: hidden;
-    background-color: #eff0f5;
-    font-family: 'Open Sans', sans-serif;
+    // background-color: #eff0f5;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Russo One', sans-serif;
+    font-family: 'Arsenal';
 
 }
 
@@ -38,8 +42,8 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #fafafa;
-    line-height: 23px;
-
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
     .mobile_contact{
         a{  
             padding: 0px 20px;
@@ -76,16 +80,17 @@ header{
 
 
 .top_bar_color{
-    background: linear-gradient(45deg, #074da2, #008fd5);
+    // background: linear-gradient(45deg, #074da2, #008fd5);
+    background-color: #fafafa;
 }
 .top_bar{
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: #000;
     margin-bottom: 0;
-    padding: 10px 0 20px 0;
+    padding: 20px 0 20px 0;
 
 
     ul{
@@ -94,7 +99,7 @@ header{
 
     a,
     li {
-        color: white;
+        color: #000;
     }
     
     .company_logo{
@@ -109,6 +114,9 @@ header{
         img{
             height: 45px;
         }
+        #logo{
+            color: #074da2;
+        }
     }
 }
 
@@ -119,12 +127,14 @@ header{
         input{
             width: 90%;
             border: none;
-            border: 1px solid #074da2;
+            border: 1px solid #074da2 ;
+            
             border-radius: 3px;
             padding: 9px;
         }
         .nav_search{
             background-color: #074da2 ;
+            // background-color: #a5f1f6;
             color: white;
             padding: 8px 15px;
             border-radius: 3px;
@@ -135,16 +145,10 @@ header{
 
     .cart_container {
 
-        // display: flex;
-        // .top_cart{
-        //     margin-right: 20px;
-        // }
-
-
         .top_login {
 
             a {
-                color: white;
+                color: #000;
                 border-radius: 3px;
                 padding: 5px 10px;
             }
@@ -152,6 +156,7 @@ header{
             a:hover{
                 background-color: white;
                 color: black;
+                border: 1px solid #074da2 ;
             }
         }
     }
@@ -161,15 +166,21 @@ header{
 nav{
     height: 53px;
     margin-top: 0;
-    background-color: #008fd5;
+    background-color: #0186ce;
+    // background: linear-gradient(45deg,#074da2, #0186ce);
+    // border: 1px solid #0186ce ;
+    // background-color: #86c5d8;
+    // background-color: #fafafa;
     font-size: 16px;
 
 
     a{
         line-height: 53px;
+        // color: #0186ce;
         color: white;
         padding: 5px 10px;
         // border: 1px solid black;
+      
     }
 
     a:hover{
@@ -203,6 +214,7 @@ nav{
 
 }
 
+// product page 
 // aside 
 
 aside {
@@ -210,8 +222,14 @@ aside {
     .aside_header {
         padding: 10px;
         margin-top: 20px;
-        background: linear-gradient(45deg,#f04349, #f5921d);
+        // background: linear-gradient(45deg,#074da2, #0186ce);
+        border: 1px solid #0186ce;
+        color: #0186ce;
+    }
+    .aside_header:hover{
+        background-color: #074da2;
         color: white;
+        border: none;
     }
 
     .aside_drop {
@@ -222,14 +240,14 @@ aside {
         justify-content: space-between;
 
         span:nth-child(2) {
-            color: #f04349;
+            color: #0186ce;
             cursor: pointer;
          }
     }
 
     .dropicon{
         cursor: pointer;
-        color: blue;
+        color: #0186ce;
     }
 
     .aside_list {
@@ -243,14 +261,14 @@ aside {
     .aside_drop1 {
         padding: 10px;
         border-bottom: 1px solid;
-        border-image-source: linear-gradient(45deg,#f04349, #f5921d);
+        border-image-source: linear-gradient(45deg,#074da2, #0186ce);
         border-image-slice: 1;
         color:#6d6d6f;
         display: flex;
         justify-content: space-between;
 
         span:nth-child(2) {
-            color: #f04349;
+            color: #0186ce;
             cursor: pointer;
          }
     } 
@@ -300,7 +318,7 @@ aside {
         color: #6d6d6f;
 
         span{
-            color: #f04349;
+            color: #074da2;
         }
     }
 
@@ -325,24 +343,26 @@ aside {
         //     padding: 0px 1em;
         // }
         .btn_like {
-            color: #f04349;
+            color: #0186ce;
             font-size: 20px;
             
         }
         .btn_like:hover{
-            color: #f04349;
+            color: #074da2;
         }
         .btn_addcart {
 
-            background-color: #f04349;
+            background-color: white;
             text-align: center;
             border-radius: 2px;
-            color: white;
+            color: #0186ce;
             padding: 7px;
+            border: 1px solid #0186ce;
             
         }
         .btn_addcart:hover{
-            background-color: #f04349
+            background-color: #074da2;
+            color: white;
         }
 
     }
@@ -371,10 +391,9 @@ aside {
 
         a{
             border: 1px solid white;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 10px 25px;
             color: white;
-            
         }
         a:hover{
             background-color: #008cd3;
@@ -413,6 +432,7 @@ aside {
 
 .payment_method {
     background-color: white;
+    padding: 20px 0;
     .payment{
         text-align: center;
         border-right: 2px solid #6d6d6f;
@@ -449,10 +469,11 @@ aside {
             padding: 0;
     
             a{
-                color: #0188cf;
+                color: #008fd5;
+                font-size: 20px;
             }
             a:hover{
-                color: #074ea3;
+                color: #074da2;
             }
         }
     }
@@ -481,13 +502,16 @@ aside {
             .subscribe_btn{
                 
                 a{
-                    color: #f04349;
-                    border: 1px solid black;
+                    color: #0186ce;
+                    border: 1px solid  #0186ce;
                     border-radius: 5px;
-                    border-color: #f04349;
                     padding: 10px 20px;
                     margin-left: 10px;
-                }      
+                }    
+                a:hover{
+                    background-color: #074da2;
+                    color: white;
+                }  
             }
         }
     }    
@@ -520,12 +544,15 @@ footer{
 
 
     .footer_copyright{
-        display: flex;
-        justify-content: space-between;
-        background-color: #074da2;
-        color: white;
+        // display: flex;
+        // justify-content: space-between;
+        // background-color: #074da2;
+        color: #000;
         line-height: 40px;
-        padding: 0px 40px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+        
     }
 }
 
@@ -537,7 +564,9 @@ footer{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background: linear-gradient(to bottom, #074da2, #008fd5); 
+    // background: linear-gradient(to bottom, #074da2, #008fd5); 
+    background-color: #fafafa;
+
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -550,14 +579,15 @@ footer{
     text-decoration: none;
     font-size: 16px;
     color: white;
+    color: #0186ce;
     display: block;
     transition: 0.3s;
-    // border: 1px solid black;
+    // border-bottom: 1px solid #0186ce;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: black;
+    color: #074da2;
     
     // border-radius: 3px;
     background-color: white;
@@ -608,7 +638,7 @@ footer{
     margin-bottom: 30px;
     .book_list_title{
         font-size: 16px;
-        color: #f04349;
+        color: #074da2;
         border-bottom: 1px solid #6d6d6f;
         display: inline-block;
     }
@@ -620,7 +650,7 @@ footer{
 
 
 
-// home page 
+// index page 
 
 
 .banner_image{
@@ -639,9 +669,15 @@ footer{
         position: absolute;
         top: 30%;
         left: 15%;
-        color: white;
+        font-family: 'Russo One', sans-serif;
+        // font-family: 'Open Sans', sans-serif;
         font-size: 60px;
-        font-weight: bold;
+        font-weight: 1000;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: 2px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.81);
+        color: #fff;
     }
 }
 
@@ -693,21 +729,26 @@ footer{
     }
     .book_container_btn{
         a{
-            padding: 3px 20px;
-            border: 1px solid #f04349;
+            padding: 7px 20px;
+            border: 1px solid #0186ce;
             border-radius: 3px;
-            color: #f04349;
+            color: #0186ce;
         }
         a:hover{
-            color: #f04349;
-            border-color: #f04349;
+            color: white;
+            // border-color: #074da2;
+            // background-color: #0186ce;
+            background-color:#074da2 ;
         }
     }
 
 
 
 .categories_banner{
-    background-image: url("../img/books1.jpg");
+    background-image: url("../img/category.jpg");
+    background-size: cover;
+    // background-position: center; 
+    // background-repeat: no-repeat;
     // height: 50vh;
 
     .categories_box_container{
@@ -717,27 +758,23 @@ footer{
         }
         
         .categories_box{
-            text-align: center;
-            background-color: #f04349;
-            border-radius: 5px;
-            color: white;
-            font-weight: bold;
+            position: relative;
+            // text-align: center;
+            // background-color: white;
+            // color: #000;
+            // font-weight: bold;
+            box-shadow: 0px 0px 10px #e9e7e7;
+            border-radius: 10px;
   
-            // height: 250px;
-            padding: 80px 0;
+            height: 200px;
             margin-bottom: 30px;
-            // margin-right: -20px;
-            // border-bottom: 1px solid black;
-            // div:nth-child(1){
-            //     padding-top: 100px;
-            // }
-            // .categories_box_title{
-         
-            // }
-
-            // .categories_box_border{
-            //     border-bottom: 2px solid white;
-            // }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+          
         }
     }
 }
@@ -773,6 +810,7 @@ footer{
             border-radius: 50%;
             height: 200px;
             width: 200px;
+            object-fit: cover;
         }
     }
     .testimonial_bio{
@@ -797,7 +835,12 @@ footer{
 
 .slick-prev:before,
 .slick-next:before {
-    color:black; 
+    color: #074da2; 
+}
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #074da2;
+    // font-size: 12px;
 }
 .slick-slide{
     img{
@@ -812,7 +855,7 @@ footer{
 }
 
 .my_account_header_cont{
-    background-color: #52b4e1;
+    background-color: #0186ce;
     text-align: center;
     color: white;
     padding: 10px 0;
@@ -900,7 +943,7 @@ footer{
         color: #d0d0d0;
     }
     .dashboard_box_icon:hover{
-        color: #52b4e1;
+        color: #0186ce;
     }
 
 }
@@ -978,20 +1021,23 @@ footer{
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 60px;
-        color: #f04349;
+        color: #074da2;
         border-bottom: 1px solid #6d6d6f;;
     }
 
     .singlebook_btn{
         a{
-            border-radius: 2px;
+            border-radius: 5px;
             padding: 10px 20px;
             margin-right: 20px;
-            border: 1px solid #074da2;
-            color: #074da2;
+            border: 1px solid #0186ce;
+            color: #0186ce;
             cursor: pointer;
             transition: all .3s ease-out;
-            
+        }
+        a:hover{
+            background-color: #074da2;
+            color: white;
         }
     }
 }
@@ -1069,8 +1115,11 @@ footer{
     .menu_burger{
         display: block;
         font-size: 18px;
+        i{
+            color: #074da2;
+        }
         a:hover{
-            color: black;
+            color: #074da2;
 
         }
 
