@@ -664,7 +664,7 @@ footer .footer_copyright {
 #index_page .index_banner_container .index_banner_text_container {
   margin-left: 100px;
   max-width: 560px;
-  padding: 100px 20px;
+  padding: 150px 20px;
   position: relative;
   width: 100%;
   z-index: 3;
@@ -725,6 +725,7 @@ footer .footer_copyright {
 
 @media screen and (max-width: 991px) {
   #index_page .index_banner_container .index_banner_text_container {
+    padding: 90px 20px;
     margin: 0 auto;
     text-align: center;
   }
@@ -1269,8 +1270,12 @@ footer .footer_copyright {
 }
 
 #single_page .course_container {
-  padding: 20px 0px;
+  padding: 40px 0;
   background-color: #f4f6f8;
+}
+
+#single_page .course_container .course_content_container {
+  margin-bottom: 40px;
 }
 
 #single_page .course_container .course_content_container .course_content_header {
@@ -1315,5 +1320,105 @@ footer .footer_copyright {
 #single_page .course_container .course_content_container .course_module_container .module_list a i {
   margin-right: 10px;
   font-size: 13px;
+}
+
+#single_page .course_container .course_content_container .course_module_container .course_description_container .description_question {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+#single_page .course_container .course_module_side_container {
+  background-color: white;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+          box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#single_page .course_container .course_module_side_container .image_container {
+  height: 120px;
+}
+
+#single_page .course_container .course_module_side_container .image_container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#single_page .course_container .course_module_side_container .instructor_title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10%;
+  margin-bottom: 2px;
+}
+
+#single_page .course_container .course_module_side_container .instructor_detail {
+  font-size: 12px;
+  padding-right: 5%;
+}
+
+#single_page .course_container .course_module_side_container .side_container_logo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a73cc;
+}
+
+#single_page .course_container .course_module_side_container .side_container_logo img {
+  height: 40px;
+  width: 40px;
+}
+
+#single_page .course_container .similar_content_header {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#single_page .course_container .similar_content_container {
+  background: #fff;
+  padding: 0;
+  border: none;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+          box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  -webkit-transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: box-shadow .1s ease,transform .1s ease;
+  transition: box-shadow .1s ease,transform .1s ease,-webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+}
+
+#single_page .course_container .similar_content_container .image_container {
+  height: 160px;
+}
+
+#single_page .course_container .similar_content_container .image_container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#single_page .course_container .similar_content_container .text_container {
+  padding: 10px;
+}
+
+#single_page .course_container .similar_content_container .text_container .text_container_header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#single_page .course_container .similar_content_container .text_container .text_container_para {
+  font-size: 12px;
+  color: #6d6d6f;
 }
 /*# sourceMappingURL=style.css.map */

@@ -513,6 +513,7 @@ aside {
 
 footer{
     background-color: #fafafc;
+    // background-color: #e6e8ea;
     font-size: 14px;
 
     .footer_logo{
@@ -653,7 +654,7 @@ footer{
         .index_banner_text_container{
             margin-left: 100px;
             max-width: 560px;
-            padding: 100px 20px;
+            padding: 150px 20px;
             position: relative;
             width: 100%;
             z-index: 3;
@@ -710,6 +711,7 @@ footer{
 
         .index_banner_container{
             .index_banner_text_container{
+                padding: 90px 20px;
                 margin: 0 auto;
                 // padding: 60px 20px 45px;
                 text-align: center;
@@ -1341,10 +1343,10 @@ footer{
     }
 
     .course_container{
-        padding: 20px 0px;
+       padding: 40px 0;
         background-color: #f4f6f8;
         .course_content_container{
-           
+           margin-bottom: 40px;
             .course_content_header{
                 font-size: 20px;
                 border-bottom: 1px solid rgba(34,36,38,.15);
@@ -1378,7 +1380,92 @@ footer{
                         }
                     }
                 }
+                .course_description_container{
+
+                    .description_question{
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px 0px;
+                    }
+                }
             }
+        }
+
+        .course_module_side_container{
+            background-color: white;
+            box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+            border: 1px solid rgba(34,36,38,.15);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            .image_container{
+                height: 120px ;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+            .instructor_title{
+                font-weight: bold;
+                font-size: 14px;
+                margin-top: 10%;
+                margin-bottom: 2px;
+            }
+            .instructor_detail{
+                font-size: 12px;
+                padding-right: 5%;
+            }
+            .side_container_logo{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: bold;
+                color: #2a73cc;
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+
+        .similar_content_header{
+            font-size: 20px;
+            border-bottom: 1px solid rgba(34,36,38,.15);
+            margin-bottom: 20px ;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        .similar_content_container{
+            background: #fff;
+            padding: 0;
+            border: none;
+            border-radius: .25rem;
+            box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+            transition: box-shadow .1s ease,transform .1s ease;
+            .image_container{
+                height: 160px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit:cover;
+                }
+            }
+            .text_container{
+                padding: 10px;
+                .text_container_header{
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                .text_container_para{
+                    font-size: 12px;
+                    color: #6d6d6f;
+                }
+
+            }
+            
         }
     }
 
