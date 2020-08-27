@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Home</title>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+<body>
+
+    <div class="mobile_topbar">
+        <div class="mobile_contact">
+           <a href="">Contact Us</a> 
+        </div>
+        <div class="mobile_links">
+               <ul >
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest"></i></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <article class="top_bar_color">
+
+            <div class="top_bar container ">
+
+                <div class="menu_burger">
+                    <a   onclick="openNav()"><i class="fas fa-bars"></i></a>
+                </div>
+
+            <div class="logo_container">
+                <ul class="company_logo">
+                    <li><a href="index.html"><img src="img/logo.png" alt="…"></a></li>
+                    <li><a id="logo" href="index.html">Ocean Publication</a></li>
+                </ul>
+            </div>
+
+            <div class="topbar_sear">
+                <input type="search" placeholder="Search by ISBN, Title, Author, Keyword">
+                <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+            </div>
+          
+            <div class="cart_container">
+                <!-- <div class="top_cart">
+                    <span><a href=""><i class="fas fa-shopping-cart"></i></a></span>
+                    <span> <a class="cart_hid" href="">Cart</a></span>
+                </div> -->
+                <div class="top_login">
+                    <a href="myaccount.html">
+                        <span><i class="far fa-user"></i></span>
+                        <span class="cart_hid">Login</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="topbar_search">
+            <input type="search" placeholder="Search by ISBN, Title, Author, Keyword">
+            <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+        </div>
+        </article>
+
+        <nav>
+            <div class="container-fluid">
+            <ul  class="nav_bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="books_video.html">Books</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <!-- <li><a href="">Authors</a></li> -->
+                <li><a href="products.html">Products</a></li>
+                <!-- <li><a href="">Price list</a></li> -->
+                <!-- <li><a href="">Offer</a></li> -->
+                <li><a href="">Publish with Us</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Books</a>
+    <a href="#">Videos</a>
+    <a href="#">Authors</a>
+    <a href="">Distrubtion</a>
+    <a href="">Price list</a>
+    <a href="">Offer</a>
+    <a href="">Publish with Us</a>
+        </div>
+
+ 
+
+    </header>
+
+    <div id="single_page">
+
+        <div class="banner_container">
+            <div class="text_container">
+                <div>
+                    Introduction to Math 
+                </div>
+                <div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda mollitia praesentium necessitatibus quo asperiores.
+                </div>
+                <div>
+                    <a href="">
+                        Start Course
+                    </a>
+                </div>
+                
+            </div>
+            <div class="background_gradient"></div>
+            <div class="background_image_container"></div>
+
+        </div>
+
+        <div class="course_container">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-9">
+                    <div class="course_content_container">
+                        <div class="course_content_header">
+                            Course Content
+                        </div>
+                        <div class="course_module_container">
+
+                            <div class="module_header">
+                                Module 1: Introduction
+                            </div>
+                            <div class="module_list">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Introduction
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           
+                            <div class="module_header">
+                                Module 1: Introduction
+                            </div>
+                            <div class="module_list">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Introduction
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="module_header">
+                                Module 1: Introduction
+                            </div>
+                            <div class="module_list">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Introduction
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <i class="fas fa-video"></i>Intro to chapter 1
+                                        </div>
+                                        <div>
+                                            4m    
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        
+                    <div class="course_description_container">
+        
+                    </div>
+                </div>
+
+                <div class="col-3">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+    
+    <script src="js/app.js" defer></script>
+
+</body>
+</html>
