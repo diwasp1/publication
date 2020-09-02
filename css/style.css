@@ -386,7 +386,7 @@ footer .footer_copyright .mobile_links ul {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   margin-bottom: 0px;
 }
 
