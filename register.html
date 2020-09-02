@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Home</title>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+<body>
+    <div class="mobile_topbar">
+       
+        <div class="mobile_contact">
+           <a href="">Contact Us</a> 
+        </div>
+        <div class="mobile_links">
+               <ul >
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest"></i></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <header>
+
+
+        <article class="top_bar_color">
+
+            <div class="top_bar ">
+
+                
+
+                <div class="logo_container">
+                    <ul class="company_logo">
+                        <!-- <li><a href="index.html"><img src="img/logo.png" alt="…"></a></li> -->
+                        <li><a id="logo" href="index.html">Ocean Publication</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu_burger">
+                    <a   onclick="openNav()"><i class="fas fa-bars"></i></a>
+                </div>
+
+                <div class="topbar_sear">
+                    <input type="search" placeholder="Search for anything">
+                    <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+                </div>
+          
+                <div class="cart_container">
+              
+                <div class="top_login">
+                    <a href="myaccount.html" data-toggle="modal" data-target="#signin">
+                        <span><i class="fas fa-sign-in-alt"></i></span>
+                        <span class="cart_hid">Sign in</span>
+                    </a>
+
+                    <a href="myaccount.html" class="singup" data-toggle="modal" data-target="#signup">
+                        <span><i class="fas fa-user-plus"></i></span>
+                        <span class="cart_hid">Sign up</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="topbar_search">
+            <input type="search" placeholder="Search for anything">
+            <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+        </div>
+        </article>
+
+         <nav>
+            <div class="container">
+            <ul  class="nav_bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="books_video.html">Books</a></li>
+                <li><a href="video.html">Videos</a></li>
+
+                <li><a href="products.html">Products</a></li>
+              
+                <li><a href="">Contact</a></li>
+                <li><a href="">Register</a></li>
+            </ul>
+        </div>
+        </nav> 
+
+        <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Books</a>
+    <a href="#">Videos</a>
+    <a href="#">Authors</a>
+    <a href="">Distrubtion</a>
+    <a href="">Price list</a>
+    <a href="">Offer</a>
+    <a href="">Publish with Us</a>
+     </div>
+
+    </header>
+
+    <!-- singin- singup modal  -->
+
+   
+
+      <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Signin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                       <label for="">User Name</label>
+                       <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                       <label for="">Password</label>
+                       <input type="password" class="form-control" placeholder="*********">
+                    </div>
+                    <div class="form-group ">
+                        <button type="submit" class="btn signin">Signin</button>
+                    </div>
+                    
+
+                </form>
+                <div class="social-login">
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <label for="">Save Password</label>
+                        </li>
+                        <li class="forget_password">
+                           <a href="">Forget Password?</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+             <div class="no_account">
+                 Haven't Any Account? <a href="">Click here</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                     </div>
+                    <div class="form-group">
+                       <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                       <input type="password" class="form-control" placeholder="*********">
+                    </div>
+                    <div class="form-group ">
+                        <button type="submit" class="btn signin">Signup</button>
+                    </div>
+                    
+
+                </form>
+              
+            </div>
+            <div class="modal-footer">
+             <div class="no_account">
+                <i class="far fa-user"></i> Already Have An Account? <a href="">Go For Login</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="register_page">
+
+        <div class="page_title">
+            <div class="container">
+                Create An Account
+            </div>
+        </div>
+
+        <div class="signin_up_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="signin_container first">
+                            <div class="sign_header">
+                                Sign in
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                   <label for="">User Name</label>
+                                   <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                   <label for="">Password</label>
+                                   <input type="password" class="form-control" placeholder="*********">
+                                </div>
+                                <div class="form-group ">
+                                    <button type="submit" class="btn signin">Signin</button>
+                                </div>
+                                
+            
+                            </form>
+                            <div class="social-login">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">Save Password</label>
+                                    </li>
+                                    <li class="forget_password">
+                                       <a href="">Forget Password?</a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="signin_container">
+                            <div class="sign_header">
+                                Sign up
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                 </div>
+                                <div class="form-group">
+                                   <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                   <input type="password" class="form-control" placeholder="*********">
+                                </div>
+                                <div class="form-group ">
+                                    <button type="submit" class="btn signin">Signup</button>
+                                </div>
+                                
+            
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+      <div class="subscribe_us_container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8 col-lg-7">
+                    <div class="subscribe_container">
+                        <div class="subscribe_header">
+                            <div>
+                                Join Thousand of Happy Students!
+                            </div>
+                            <div>
+                                Subscribe our newsletter & get latest news and updation!
+                            </div>
+                        </div>
+                        <form  class="sup_form">
+                            <input class="form-control" type="email" placeholder="Your Email Address" >
+                            <div class="get_started_btn">
+                                <a href="">Get Started</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="gradient"></div>
+    </div>
+
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="footer_box footer_address">
+                        <div class = footer_logo>
+                            <a href=""><img src="img/logo.png" alt="…"></a>
+                        </div>
+                        <div>
+                            4967  Sardis Sta, Victoria 8007, Montreal.
+                        </div>
+                        <div>
+                            +1 246-345-0695
+                        </div>
+                        <div>
+                            info@oceanpublication.com
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-3 col-lg-2">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            Navigation
+                        </div>
+                        <div>
+                            <ul class="footer_list">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">FAQs Page</a></li>
+                                <li><a href="">Checkout</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            Categories
+                        </div>
+                        <div>
+                            <ul class="footer_list">
+                                <li><a href="">School</a></li>
+                                <li><a href="">College</a></li>
+                                <li><a href="">University</a></li>
+                                <li><a href="">References</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2" >
+                    <div class = "footer_box">
+                        <div class="footer_header">
+                            Help & Support
+                        </div>
+                        <div>
+                            <ul class="footer_list" >
+                                <li> <a href="">Documentation</a></li>
+                                <li><a href="">Live Chart</a></li>
+                                <li><a href="">Mail Us</a><li>
+                                <li><a href="">Privacy</a> </li>
+                                <li><a href="">Faqs</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-md-12 col-lg-3">
+                    <div class = "footer_box">
+                        <div class="footer_header">
+                            Download Apps
+                        </div>
+                        <div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_copyright">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>&copy; 2020 Ocean Publication</strong>  Developed by <a href="">An4soft</a> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mobile_links">
+                            <ul >
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-pinterest"></i></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="backtop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+       
+    </footer>
+    
+</body>
+</html>
