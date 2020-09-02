@@ -32,7 +32,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 3000;
+  z-index: 100;
   background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
@@ -94,13 +94,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
-  padding: 15px 0 15px 0;
+  padding: 20px 15px;
 }
 
 .top_bar ul {
@@ -136,7 +137,11 @@ header {
 }
 
 .top_bar .company_logo #logo {
-  color: #2c87f0;
+  color: #00ba74;
+  background: rgba(0, 173, 182, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00ba74;
 }
 
 .topbar_sear {
@@ -147,15 +152,15 @@ header {
 }
 
 .topbar_sear input {
-  width: 90%;
+  width: 50%;
   border: none;
-  border: 1px solid #2c87f0;
+  border: 1px solid rgba(100, 123, 156, 0.3);
   border-radius: 3px;
   padding: 9px;
 }
 
 .topbar_sear .nav_search {
-  background-color: #2c87f0;
+  background-color: #00ba74;
   color: white;
   padding: 8px 15px;
   border-radius: 3px;
@@ -175,25 +180,33 @@ header {
 }
 
 .cart_container .top_login a:hover {
-  background-color: #2c87f0;
   color: white;
+  background-color: #00ba74;
+}
+
+.cart_container .top_login .singup {
+  background-color: #00ba74;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 nav {
   margin-top: 0;
-  background-color: #2c87f0;
+  background: #fbfbf8;
   font-size: 16px;
+  border-top: 1px solid #e8e8e8;
 }
 
 nav a {
   line-height: 45px;
-  color: white;
+  color: black;
   padding: 5px 10px;
 }
 
 nav a:hover {
   background-color: white;
   border-radius: 3px;
+  color: #00ba74;
 }
 
 nav .nav_bar {
@@ -204,23 +217,7 @@ nav .nav_bar {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
   margin: 0;
-}
-
-nav .nav_bar input {
-  margin: 5px 0;
-  border: none;
-  padding: 4.5px 0;
-  width: 265px;
-  font-size: 14px;
-  text-align: center;
-}
-
-nav .nav_bar .nav_search {
-  margin-left: -5px;
-  background-color: #f04349;
-  padding: 6px;
 }
 
 /* The side navigation menu */
@@ -282,8 +279,7 @@ nav .nav_bar .nav_search {
 }
 
 .subscribe_us_container .gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#2D3954), color-stop(85%, rgba(39, 16, 102, 0)), color-stop(0, rgba(39, 16, 102, 0)), to(#2D3954));
-  background: linear-gradient(90deg, #2D3954, rgba(39, 16, 102, 0) 85%, rgba(39, 16, 102, 0) 0, #2D3954);
+  background: rgba(0, 173, 182, 0.1);
   position: absolute;
   top: 0;
   right: 0;
@@ -325,7 +321,7 @@ nav .nav_bar .nav_search {
 .subscribe_us_container .subscribe_container .sup_form .get_started_btn a {
   position: absolute;
   padding: 14px 25px 14px;
-  background-color: #2c87f0;
+  background-color: #00ba74;
   color: #ffffff;
   border-radius: 2px;
   bottom: 10px;
@@ -375,7 +371,7 @@ footer .footer_copyright {
   border-top: 1px solid #e9edf3;
   color: #000;
   line-height: 40px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   font-size: 14px;
 }
@@ -393,6 +389,21 @@ footer .footer_copyright .mobile_links ul {
 footer .footer_copyright .mobile_links ul li {
   padding-right: 20px;
   font-size: 20px;
+}
+
+footer .backtop {
+  overflow: hidden;
+  z-index: 999;
+  cursor: pointer;
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 4px;
+  background: #333c56;
+  color: #fff;
+  padding: 8px 12px;
 }
 
 #index_page .index_banner_container {
@@ -427,7 +438,7 @@ footer .footer_copyright .mobile_links ul li {
   background-color: #ffffff;
   border-radius: 2px;
   border: 0 solid transparent;
-  color: #2c87f0;
+  color: #00ba74;
   font-size: 20px;
   outline: none;
   padding: 15px 70px;
@@ -436,7 +447,7 @@ footer .footer_copyright .mobile_links ul li {
 }
 
 #index_page .index_banner_container .index_banner_text_container a:hover {
-  background-color: #2c87f0;
+  background-color: #00ba74;
   color: #fff;
 }
 
