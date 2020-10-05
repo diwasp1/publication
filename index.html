@@ -8,11 +8,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
-    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -36,62 +33,72 @@
 
     </div>
 
-    <header>
-
-
+   <header>
         <article class="top_bar_color">
+            <div class="container"> 
+                <div class="top_bar ">
 
-            <div class="top_bar ">
+                    <div class="logo_container">
+                        <ul class="company_logo">
+                            <!-- <li><a href="index.html"><img src="img/logo.png" alt="…"></a></li> -->
+                            <li><a id="logo" href="index.html">Ocean Publication</a></li>
+                        </ul>
+                    </div>
 
-                
+                    <div class="menu_burger">
+                        <a   onclick="openNav()"><i class="fas fa-bars"></i></a>
+                    </div>
 
-                <div class="logo_container">
-                    <ul class="company_logo">
-                        <!-- <li><a href="index.html"><img src="img/logo.png" alt="…"></a></li> -->
-                        <li><a id="logo" href="dashboard.html">Ocean Publication</a></li>
-                    </ul>
-                </div>
-
-                <div class="menu_burger">
-                    <a   onclick="openNav()"><i class="fas fa-bars"></i></a>
-                </div>
-
-                <div class="topbar_sear">
-                    <input type="search" placeholder="Search for anything">
-                    <a class="nav_search" href=""><i class="fas fa-search"></i></a>
-                </div>
+                    <div class="topbar_sear">
+                        <input type="search" placeholder="Search for anything">
+                        <a class="nav_search" href=""><i class="fas fa-search"></i></a>
+                    </div>
           
-                <div class="cart_container">
-              
-                <div class="top_login">
-                    <a href="" data-toggle="modal" data-target="#signin">
-                        <span><i class="fas fa-sign-in-alt"></i></span>
-                        <span class="cart_hid">Sign in</span>
-                    </a>
+                    <div class="cart_container">
+                        <div class="top_login">
+                            <a href="" data-toggle="modal" data-target="#signin">
+                                <span><i class="fas fa-sign-in-alt"></i></span>
+                                <span class="cart_hid">Sign in</span>
+                            </a>
 
-                    <a href="" class="singup" data-toggle="modal" data-target="#signup">
-                        <span><i class="fas fa-user-plus"></i></span>
-                        <span class="cart_hid">Sign up</span>
-                    </a>
-
+                            <a href="" class="singup" data-toggle="modal" data-target="#signup">
+                                <span><i class="fas fa-user-plus"></i></span>
+                                <span class="cart_hid">Sign up</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="topbar_search">
-            <input type="search" placeholder="Search for anything">
-            <a class="nav_search" href=""><i class="fas fa-search"></i></a>
-        </div>
         </article>
 
          <nav>
             <div class="container">
+                
             <ul  class="nav_bar">
-                <li><a href="index.html">Home</a></li>
+
+              <div class="dropdown show">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bars"></i>  All Links
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="about.html">About us</a>
+                    <a class="dropdown-item" href="packages.html">Packages</a>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                </div>
+              </div>
+
+                <!-- <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="packages.html">Packages</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="register.html">Register</a></li> -->
+                <li><a href="">PROGRMAS</a></li>
+                <li><a href="">CATALOUGE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="register.html">REGISTER</a></li>
             </ul>
         </div>
         </nav> 
@@ -396,6 +403,7 @@
                 <div class="our_package_header">
                     Our Packages
                 </div>
+                
                 <div class="row">
                     <div class="col-md-4">
                         <div class="course_container">
@@ -754,12 +762,13 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
-    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script> -->
+     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="js/app.js" defer></script>
 
   
