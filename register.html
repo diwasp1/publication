@@ -16,10 +16,13 @@
 <body>
     
     <div class="mobile_topbar">
-       
-        <div class="mobile_contact">
-           <a href="">Contact Us</a> 
-        </div>
+       <div class="container topbar">
+            <div class="mobile_contact">
+            <a href="">Contact Us</a> 
+            <span>info@oceanpublication.com </span>
+            <a href="">Call Us</a> 
+            <span>+1 246-345-0695 </span>
+            </div>
         <div class="mobile_links">
                <ul >
                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -29,10 +32,10 @@
                 <li><a href=""><i class="fab fa-youtube"></i></a></li>
             </ul>
         </div>
-
+       </div>
     </div>
 
-   <header>
+ <header>
         <article class="top_bar_color">
             <div class="container"> 
                 <div class="top_bar ">
@@ -55,15 +58,16 @@
           
                     <div class="cart_container">
                         <div class="top_login">
-                            <a href="" data-toggle="modal" data-target="#signin">
+                            <!-- <a href="" data-toggle="modal" data-target="#signin"> -->
+                            <a href="myaccount.html">     
+                                <span class="cart_hid">Login/Register</span>
                                 <span><i class="fas fa-sign-in-alt"></i></span>
-                                <span class="cart_hid">Sign in</span>
                             </a>
 
-                            <a href="" class="singup" data-toggle="modal" data-target="#signup">
+                            <!-- <a href="" class="singup" data-toggle="modal" data-target="#signup">
                                 <span><i class="fas fa-user-plus"></i></span>
                                 <span class="cart_hid">Sign up</span>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -117,95 +121,6 @@
 
     </header>
 
-    <!-- singin- singup modal  -->
-
-   
-
-      <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Signin</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                       <label for="">User Name</label>
-                       <input type="text" class="form-control" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                       <label for="">Password</label>
-                       <input type="password" class="form-control" placeholder="*********">
-                    </div>
-                    <div class="form-group ">
-                        <button type="submit" class="btn signin">Signin</button>
-                    </div>
-                    
-
-                </form>
-                <div class="social-login">
-                    <ul>
-                        <li>
-                            <input type="checkbox">
-                            <label for="">Save Password</label>
-                        </li>
-                        <li class="forget_password">
-                           <a href="">Forget Password?</a> 
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modal-footer">
-             <div class="no_account">
-                 Haven't Any Account? <a href="">Click here</a>
-             </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Full Name">
-                     </div>
-                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                     </div>
-                    <div class="form-group">
-                       <input type="text" class="form-control" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                       <input type="password" class="form-control" placeholder="*********">
-                    </div>
-                    <div class="form-group ">
-                        <button type="submit" class="btn signin">Signup</button>
-                    </div>
-                    
-
-                </form>
-              
-            </div>
-            <div class="modal-footer">
-             <div class="no_account">
-                <i class="far fa-user"></i> Already Have An Account? <a href="">Go For Login</a>
-             </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div id="register_page">
 
@@ -219,42 +134,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="signin_container first">
-                            <div class="sign_header">
-                                Sign in
-                            </div>
-                            <form>
-                                <div class="form-group">
-                                   <label for="">User Name</label>
-                                   <input type="text" class="form-control" placeholder="Username">
-                                </div>
-                                <div class="form-group">
-                                   <label for="">Password</label>
-                                   <input type="password" class="form-control" placeholder="*********">
-                                </div>
-                                <div class="form-group ">
-                                    <button type="submit" class="btn signin">Signin</button>
-                                </div>
-                                
-            
-                            </form>
-                            <div class="social-login">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox">
-                                        <label for="">Save Password</label>
-                                    </li>
-                                    <li class="forget_password">
-                                       <a href="">Forget Password?</a> 
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="register_container">
+                           <div class="register-header">
+                              Have an account , Login!
+                           </div>
+                           <div class="register-btn">
+                               <a href="myaccount.html">Login Now !</a>
+                           </div>
+                       </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="signin_container">
                             <div class="sign_header">
-                                Sign up
+                                Register
                             </div>
                             <form>
                                 <div class="form-group">
@@ -270,7 +162,7 @@
                                    <input type="password" class="form-control" placeholder="*********">
                                 </div>
                                 <div class="form-group ">
-                                    <button type="submit" class="btn signin">Signup</button>
+                                    <button type="submit" class="btn signin">Register</button>
                                 </div>
                                 
             
