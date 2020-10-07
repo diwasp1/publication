@@ -28,9 +28,6 @@ a:hover {
 /* topbar  */
 
 header {
-  position: sticky;
-  top: 0px;
-  z-index: 100;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
@@ -91,11 +88,17 @@ header {
 }
 
 .top_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 0;
-  padding: 10px 15px 30px;
+  padding: 30px 0px;
 
   ul {
     margin: 0;
@@ -227,15 +230,23 @@ header {
 }
 
 nav {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
   margin-top: 0;
   background: #fff;
   font-size: 16px;
+  border-top: 1px solid #dcdacb;
+  background: #fbfbf8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
   //   border-top: 1px solid #e8e8e8;
   a {
     line-height: 45px;
-    color: black;
     padding: 5px 10px;
-    font-weight: 500;
+    color: #2d3954;
+    font-weight: 600;
+    font-size: 15px;
   }
 
   a:hover {
@@ -273,7 +284,7 @@ nav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 1000; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   // background: linear-gradient(to bottom, #074da2, #008fd5);
@@ -322,6 +333,11 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
   .top_bar {
     padding: 20px 0px;
   }
@@ -352,12 +368,11 @@ nav {
     .subscribe_header {
       text-align: center;
       font-size: 30px;
-
-      font-weight: 900;
+      font-weight: 600;
       div:nth-child(2) {
         font-size: 15px;
         margin-top: 10px;
-        font-weight: 100;
+        font-weight: 300;
       }
     }
     .sup_form {
@@ -568,7 +583,7 @@ footer {
         .trips_details {
           .trips_details_header {
             font-size: 16px;
-            font-weight: 900;
+            font-weight: 500;
             line-height: 26px;
             color: black;
           }
@@ -583,10 +598,10 @@ footer {
   }
 
   .our_publication_container {
-    margin: 80px 0;
+    margin: 80px 30px;
     .our_publication_header {
-      font-size: 30px;
-      font-weight: 900;
+      font-size: 35px;
+      font-weight: 600;
       text-align: center;
       margin-bottom: 50px;
       color: #2d3954;
@@ -594,28 +609,42 @@ footer {
     .publication_container {
       background: rgba(0, 173, 182, 0.1);
       border-radius: 10px;
-      display: flex;
       margin-bottom: 25px;
-      // justify-content: space-around;
-      padding: 34px 16px;
-      .publication_icon {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 55px;
-        height: 55px;
-        font-size: 20px;
-        color: #00adb6;
-        margin-right: 30px;
+      padding: 20px 16px;
+      text-align: center;
+
+      .book_icon {
+        font-size: 70px;
+        color: #00ba74;
       }
-      .publication_details {
-        div:nth-child(1) {
-          font-size: 20px;
-          font-weight: 900;
-          // color: #00adb6;
-          color: #00adb6;
+      .book_container_title {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #2d3954;
+      }
+      .book_container_text {
+        color: #647b9c;
+        margin-bottom: 20px;
+      }
+      .book_container_btn {
+        span {
+          color: #000;
+          border-radius: 3px;
+          padding: 7px 15px;
+          border: 1px solid rgba(100, 123, 156, 0.3);
+        }
+      }
+    }
+    .publication_container:hover {
+      border: 1px solid #00ba74;
+      .book_container_title {
+        color: #00ba74;
+      }
+      .book_container_btn {
+        span {
+          color: #00ba74;
+          border-color: #00ba74;
         }
       }
     }
@@ -625,8 +654,8 @@ footer {
     background: #f4f5f7;
     padding: 80px 0;
     .our_package_header {
-      font-size: 30px;
-      font-weight: 900;
+      font-size: 35px;
+      font-weight: 600;
       text-align: center;
       margin-bottom: 50px;
       color: #2d3954;
@@ -645,7 +674,7 @@ footer {
         margin-bottom: 10px;
         color: #2d3954;
         text-transform: capitalize;
-        font-weight: 600;
+        font-weight: 500;
         padding: 20px 20px 5px;
       }
       .course_info {
@@ -671,8 +700,17 @@ footer {
         text-align: right;
         padding: 16px 24px;
         font-size: 25px;
-        font-weight: 900;
+        font-weight: 600;
         color: #2d3954;
+      }
+    }
+    .course_container:hover {
+      border: 1px solid #00ba74;
+      .course_title {
+        color: #00ba74;
+      }
+      .course_price {
+        color: #00ba74;
       }
     }
   }
@@ -680,8 +718,8 @@ footer {
   .news_container {
     padding: 80px 0;
     .news_header {
-      font-size: 30px;
-      font-weight: 900;
+      font-size: 35px;
+      font-weight: 600;
       text-align: center;
       margin-bottom: 50px;
       color: #2d3954;
@@ -699,7 +737,7 @@ footer {
         margin-bottom: 10px;
         color: #2d3954;
         text-transform: capitalize;
-        font-weight: 600;
+        font-weight: 500;
         padding: 20px 20px 5px;
       }
       .article_author {
