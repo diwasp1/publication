@@ -14,6 +14,7 @@ li {
   text-decoration: none;
   list-style: none;
   color: #647b9c;
+  //   color: #ffffff;
 }
 ul {
   padding: 0px;
@@ -22,7 +23,7 @@ ul {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #00ba74;
+    color: #008fd5;
 }
 
 /* topbar  */
@@ -36,6 +37,7 @@ header {
   line-height: 25px;
   border-bottom: 1px solid #e8e8e8;
   font-size: 14px;
+  background-color: #008fd5;
   .topbar {
     display: flex;
     justify-content: space-between;
@@ -43,24 +45,29 @@ header {
     .mobile_contact {
       a {
         padding-left: 40px;
-        color: #2d3954;
+        // color: #2d3954;
+        color: #ffffff;
         margin-right: 5px;
         i {
           padding: 0px 5px;
-          color: #00ba74;
+          //   color: #f04f23;
+          color: #034ea2;
         }
       }
       a:hover {
-        color: #00ba74;
+        // color: #00ba74;
+        color: #034ea2;
       }
       span {
-        color: #647b9c;
+        // color: #647b9c;
+        color: #ffffff;
       }
     }
 
     .mobile_links {
       a:hover {
-        color: #00ba74;
+        color: #034ea2;
+        // color: #f04f23;
       }
       ul {
         display: flex;
@@ -72,7 +79,9 @@ header {
         }
         li {
           padding-right: 20px;
-          color: #2d3954;
+          a {
+            color: #ffffff;
+          }
         }
       }
     }
@@ -80,10 +89,6 @@ header {
 }
 
 .menu_burger {
-  display: none;
-}
-
-.topbar_search {
   display: none;
 }
 
@@ -98,7 +103,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 0;
-  padding: 30px 0px;
+  padding: 15px 0px;
 
   ul {
     margin: 0;
@@ -119,7 +124,7 @@ header {
       margin-left: 5px;
     }
     img {
-      height: 55px;
+      height: 100px;
     }
     #logo {
       color: #00ba74;
@@ -144,8 +149,8 @@ header {
       outline: none;
     }
     .nav_search {
-      background-color: #00ba74;
-      // background-color: #a5f1f6;
+      //   background-color: #00ba74;
+      background-color: #034ea2;
       color: white;
       padding: 8px 15px;
       border-radius: 3px;
@@ -164,7 +169,7 @@ header {
 
       a:hover {
         color: white;
-        background-color: #00ba74;
+        background-color: #008fd5;
       }
       .singup {
         background-color: #00ba74;
@@ -252,8 +257,8 @@ nav {
   a:hover {
     background-color: white;
     border-radius: 3px;
-    color: #00ba74;
-    border-bottom: 2px solid #00ba74;
+    color: #034ea2;
+    border-bottom: 2px solid #034ea2;
     border-radius: 0px;
   }
 
@@ -274,7 +279,7 @@ nav {
   }
   .dropdown-menu {
     a:active {
-      background-color: #647b9c !important;
+      background-color: #008fd5 !important;
     }
   }
 }
@@ -339,7 +344,12 @@ nav {
     z-index: 100;
   }
   .top_bar {
-    padding: 20px 0px;
+    padding: 10px 0px;
+    .company_logo {
+      img {
+        height: 80px;
+      }
+    }
   }
 }
 
@@ -364,11 +374,11 @@ nav {
   .subscribe_container {
     position: relative;
     z-index: 3;
-    color: #1baf65;
+    color: #2d3954;
     .subscribe_header {
       text-align: center;
       font-size: 30px;
-      font-weight: 600;
+      font-weight: 400;
       div:nth-child(2) {
         font-size: 15px;
         margin-top: 10px;
@@ -390,7 +400,7 @@ nav {
         a {
           position: absolute;
           padding: 14px 25px 14px;
-          background-color: #00ba74;
+          background-color: #008fd5;
           color: #ffffff;
           border-radius: 2px;
           bottom: 10px;
@@ -501,14 +511,14 @@ footer {
         background-color: #ffffff;
         border-radius: 2px;
         border: 0 solid transparent;
-        color: #00ba74;
+        color: #008fd5;
         font-size: 20px;
         outline: none;
         padding: 15px 70px;
         transition: background-color 0.2s;
       }
       a:hover {
-        background-color: #00ba74;
+        background-color: #008fd5;
         color: #fff;
       }
     }
@@ -569,7 +579,7 @@ footer {
         padding: 24px 16px;
 
         .trips_icon {
-          color: #00adb6;
+          color: #008fd5;
           background: rgba(0, 186, 116, 0.1);
           border-radius: 50%;
           width: 55px;
@@ -615,7 +625,7 @@ footer {
 
       .book_icon {
         font-size: 70px;
-        color: #00ba74;
+        color: #008fd5;
       }
       .book_container_title {
         font-size: 32px;
@@ -637,14 +647,14 @@ footer {
       }
     }
     .publication_container:hover {
-      border: 1px solid #00ba74;
+      border: 1px solid #034ea2;
       .book_container_title {
-        color: #00ba74;
+        color: #034ea2;
       }
       .book_container_btn {
         span {
-          color: #00ba74;
-          border-color: #00ba74;
+          color: #034ea2;
+          border-color: #034ea2;
         }
       }
     }
@@ -705,12 +715,12 @@ footer {
       }
     }
     .course_container:hover {
-      border: 1px solid #00ba74;
+      border: 1px solid #034ea2;
       .course_title {
-        color: #00ba74;
+        color: #034ea2;
       }
       .course_price {
-        color: #00ba74;
+        color: #034ea2;
       }
     }
   }
@@ -773,14 +783,13 @@ footer {
   .signin_up_container {
     color: #2d3954;
     background-color: #f4f8fa;
-    padding-top: 40px;
+    padding: 70px 0;
 
     .signin_container {
       padding: 32px;
       padding-top: 10px;
       border-radius: 10px;
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
-      margin-bottom: 40px;
       background-color: #ffffff;
       .sign_header {
         text-align: center;

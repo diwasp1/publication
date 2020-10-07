@@ -24,7 +24,7 @@ ul {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #00ba74;
+  color: #008fd5;
 }
 
 /* topbar  */
@@ -37,6 +37,7 @@ header {
   line-height: 25px;
   border-bottom: 1px solid #e8e8e8;
   font-size: 14px;
+  background-color: #008fd5;
 }
 
 .mobile_topbar .topbar {
@@ -50,25 +51,25 @@ header {
 
 .mobile_topbar .topbar .mobile_contact a {
   padding-left: 40px;
-  color: #2d3954;
+  color: #ffffff;
   margin-right: 5px;
 }
 
 .mobile_topbar .topbar .mobile_contact a i {
   padding: 0px 5px;
-  color: #00ba74;
+  color: #034ea2;
 }
 
 .mobile_topbar .topbar .mobile_contact a:hover {
-  color: #00ba74;
+  color: #034ea2;
 }
 
 .mobile_topbar .topbar .mobile_contact span {
-  color: #647b9c;
+  color: #ffffff;
 }
 
 .mobile_topbar .topbar .mobile_links a:hover {
-  color: #00ba74;
+  color: #034ea2;
 }
 
 .mobile_topbar .topbar .mobile_links ul {
@@ -87,14 +88,13 @@ header {
 
 .mobile_topbar .topbar .mobile_links ul li {
   padding-right: 20px;
-  color: #2d3954;
+}
+
+.mobile_topbar .topbar .mobile_links ul li a {
+  color: #ffffff;
 }
 
 .menu_burger {
-  display: none;
-}
-
-.topbar_search {
   display: none;
 }
 
@@ -109,7 +109,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 0;
-  padding: 30px 0px;
+  padding: 15px 0px;
 }
 
 .top_bar ul {
@@ -141,7 +141,7 @@ header {
 }
 
 .top_bar .company_logo img {
-  height: 55px;
+  height: 100px;
 }
 
 .top_bar .company_logo #logo {
@@ -172,7 +172,7 @@ header {
 }
 
 .top_bar .topbar_sear .nav_search {
-  background-color: #00ba74;
+  background-color: #034ea2;
   color: white;
   padding: 8px 15px;
   border-radius: 3px;
@@ -189,7 +189,7 @@ header {
 
 .top_bar .cart_container .top_login a:hover {
   color: white;
-  background-color: #00ba74;
+  background-color: #008fd5;
 }
 
 .top_bar .cart_container .top_login .singup {
@@ -283,8 +283,8 @@ nav a {
 nav a:hover {
   background-color: white;
   border-radius: 3px;
-  color: #00ba74;
-  border-bottom: 2px solid #00ba74;
+  color: #034ea2;
+  border-bottom: 2px solid #034ea2;
   border-radius: 0px;
 }
 
@@ -309,7 +309,7 @@ nav .nav_bar {
 }
 
 .dropdown .dropdown-menu a:active {
-  background-color: #647b9c !important;
+  background-color: #008fd5 !important;
 }
 
 /* The side navigation menu */
@@ -377,7 +377,10 @@ nav .nav_bar {
     z-index: 100;
   }
   .top_bar {
-    padding: 20px 0px;
+    padding: 10px 0px;
+  }
+  .top_bar .company_logo img {
+    height: 80px;
   }
 }
 
@@ -399,13 +402,13 @@ nav .nav_bar {
 .subscribe_us_container .subscribe_container {
   position: relative;
   z-index: 3;
-  color: #1baf65;
+  color: #2d3954;
 }
 
 .subscribe_us_container .subscribe_container .subscribe_header {
   text-align: center;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .subscribe_us_container .subscribe_container .subscribe_header div:nth-child(2) {
@@ -431,7 +434,7 @@ nav .nav_bar {
 .subscribe_us_container .subscribe_container .sup_form .get_started_btn a {
   position: absolute;
   padding: 14px 25px 14px;
-  background-color: #00ba74;
+  background-color: #008fd5;
   color: #ffffff;
   border-radius: 2px;
   bottom: 10px;
@@ -548,7 +551,7 @@ footer .backtop {
   background-color: #ffffff;
   border-radius: 2px;
   border: 0 solid transparent;
-  color: #00ba74;
+  color: #008fd5;
   font-size: 20px;
   outline: none;
   padding: 15px 70px;
@@ -557,7 +560,7 @@ footer .backtop {
 }
 
 #index_page .index_banner_container .index_banner_text_container a:hover {
-  background-color: #00ba74;
+  background-color: #008fd5;
   color: #fff;
 }
 
@@ -622,7 +625,7 @@ footer .backtop {
 }
 
 #index_page .banner_box_container .trips_container .trips .trips_icon {
-  color: #00adb6;
+  color: #008fd5;
   background: rgba(0, 186, 116, 0.1);
   border-radius: 50%;
   width: 55px;
@@ -675,7 +678,7 @@ footer .backtop {
 
 #index_page .our_publication_container .publication_container .book_icon {
   font-size: 70px;
-  color: #00ba74;
+  color: #008fd5;
 }
 
 #index_page .our_publication_container .publication_container .book_container_title {
@@ -698,16 +701,16 @@ footer .backtop {
 }
 
 #index_page .our_publication_container .publication_container:hover {
-  border: 1px solid #00ba74;
+  border: 1px solid #034ea2;
 }
 
 #index_page .our_publication_container .publication_container:hover .book_container_title {
-  color: #00ba74;
+  color: #034ea2;
 }
 
 #index_page .our_publication_container .publication_container:hover .book_container_btn span {
-  color: #00ba74;
-  border-color: #00ba74;
+  color: #034ea2;
+  border-color: #034ea2;
 }
 
 #index_page .our_package_container {
@@ -781,15 +784,15 @@ footer .backtop {
 }
 
 #index_page .our_package_container .course_container:hover {
-  border: 1px solid #00ba74;
+  border: 1px solid #034ea2;
 }
 
 #index_page .our_package_container .course_container:hover .course_title {
-  color: #00ba74;
+  color: #034ea2;
 }
 
 #index_page .our_package_container .course_container:hover .course_price {
-  color: #00ba74;
+  color: #034ea2;
 }
 
 #index_page .news_container {
@@ -859,7 +862,7 @@ footer .backtop {
 #register_page .signin_up_container {
   color: #2d3954;
   background-color: #f4f8fa;
-  padding-top: 40px;
+  padding: 70px 0;
 }
 
 #register_page .signin_up_container .signin_container {
@@ -868,7 +871,6 @@ footer .backtop {
   border-radius: 10px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
-  margin-bottom: 40px;
   background-color: #ffffff;
 }
 
