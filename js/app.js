@@ -69,6 +69,7 @@ $(document).ready(function () {
 
   let searchIcon = document.getElementById("search-icon");
   let searchBar = document.querySelector(".search-bar");
+  let hamBar = document.querySelector("#ham-bar")
 
   searchIcon.addEventListener("click", displaySearch);
 
@@ -85,6 +86,8 @@ $(document).ready(function () {
   window.onclick = function (event) {
     if (event.target != searchBar && event.target != searchIcon) {
       searchBar.style.display = "none";
+    }else if (event.target != hamBar) {
+      closeNav();
     }
   };
 });

@@ -27,6 +27,56 @@ a:hover {
   color: #008fd5;
 }
 
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #f5f5f5;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 90px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #c9c9c9;
+  line-height: 35px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border-bottom: none;
+}
+
 .subscribe_us_container {
   background-position: bottom;
   padding: 80px 0;
@@ -287,33 +337,6 @@ footer .backtop {
   #index_page .banner .slider .overlay-container .button-container {
     margin-top: 30px;
   }
-  #index_page .banner .search-wrapper {
-    position: relative;
-    bottom: 25%;
-    margin-top: 0px;
-  }
-  #index_page .banner .search-wrapper .top-search-bar {
-    display: block;
-    background: none;
-  }
-  #index_page .banner .search-wrapper .top-search-bar .top-search-wrapper {
-    width: 100%;
-  }
-  #index_page .banner .search-wrapper .bottom-search-bar-mobile {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  #index_page .banner .search-wrapper.sticky {
-    height: 60px;
-    -webkit-box-shadow: 0px 2px 10px #d6d7d8;
-            box-shadow: 0px 2px 10px #d6d7d8;
-  }
-  #index_page .banner .search-wrapper.sticky .item {
-    padding: 30px 0px 12px 10px;
-  }
-  #index_page .banner .search-wrapper.sticky .item .item-sup {
-    top: -3px;
-  }
   #index_page .banner .navbar-wrapper {
     padding-top: 0px;
   }
@@ -428,7 +451,7 @@ footer .backtop {
     line-height: 60px;
   }
   #index_page .primary-navbar .logo-container img {
-    height: 40px;
+    height: 50px;
   }
   #index_page .primary-navbar .primary-content {
     display: none;
@@ -444,7 +467,6 @@ footer .backtop {
           justify-content: space-between;
   padding: 0px 60px;
   line-height: 50px;
-  background: #f5f5f5;
   color: #646363;
 }
 

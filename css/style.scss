@@ -25,6 +25,44 @@ a:hover {
   cursor: pointer;
   color: #008fd5;
 }
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #f5f5f5; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 90px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #c9c9c9;
+  line-height: 35px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border-bottom: none;
+}
 
 // footer
 
@@ -269,32 +307,6 @@ footer {
           }
         }
       }
-      .search-wrapper {
-        position: relative;
-        bottom: 25%;
-        margin-top: 0px;
-        .top-search-bar {
-          display: block;
-          background: none;
-          .top-search-wrapper {
-            width: 100%;
-          }
-        }
-        .bottom-search-bar-mobile {
-          box-shadow: none;
-        }
-      }
-      .search-wrapper.sticky {
-        // background: #f5f5f5;
-        height: 60px;
-        box-shadow: 0px 2px 10px #d6d7d8;
-        .item {
-          padding: 30px 0px 12px 10px;
-          .item-sup {
-            top: -3px;
-          }
-        }
-      }
       .navbar-wrapper {
         padding-top: 0px;
       }
@@ -382,7 +394,7 @@ footer {
         padding-left: 0px;
         line-height: 60px;
         img {
-          height: 40px;
+          height: 50px;
         }
       }
       .primary-content {
@@ -395,7 +407,7 @@ footer {
     justify-content: space-between;
     padding: 0px 60px;
     line-height: 50px;
-    background: #f5f5f5;
+    // background: #f5f5f5;
     color: #646363;
     .become-member {
       font-size: 14px;
