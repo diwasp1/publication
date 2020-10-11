@@ -246,7 +246,7 @@ footer .backtop {
 }
 
 #index_page .banner .navbar-wrapper .primary-navbar .logo-container {
-  height: 80px;
+  height: 90px;
 }
 
 #index_page .banner .navbar-wrapper .primary-navbar .logo-container img {
@@ -290,6 +290,7 @@ footer .backtop {
   margin-right: 5px;
   border: none;
   display: none;
+  font-size: 14px;
 }
 
 #index_page .banner .navbar-wrapper .primary-navbar .primary-content .first-navbar-wrapper li .search-bar:focus {
@@ -381,7 +382,7 @@ footer .backtop {
     padding: 0px 10px;
   }
   #index_page .banner .navbar-wrapper .primary-navbar .logo-container {
-    height: 80px;
+    height: 90px;
   }
   #index_page .banner .navbar-wrapper .primary-content {
     display: none;

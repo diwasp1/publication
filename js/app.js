@@ -19,10 +19,10 @@ $(document).ready(function () {
   function displaySearch() {
     if (searchBar.style.display == "none") {
       searchBar.style.display = "inline-block";
-      console.log("show");
+      searchBar.focus();
+      searchBar.value = "";
     } else {
       searchBar.style.display = "none";
-      console.log("hide");
     }
   }
 
@@ -52,7 +52,7 @@ window.onscroll = function () {
     navWrapper.style.position = "absolute";
     navWrapper.style.background = "none";
     firstNav.style.display = "flex";
-    logoContainer.style.height = "80px";
+    logoContainer.style.height = "90px";
 
     // navWrapper.classList.remove("nav-sticky");
   }
