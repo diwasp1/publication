@@ -52,7 +52,7 @@ window.onscroll = function () {
     navWrapper.style.position = "absolute";
     navWrapper.style.background = "none";
     firstNav.style.display = "flex";
-    logoContainer.style.height = "90px";
+    logoContainer.style.height = "80px";
 
     // navWrapper.classList.remove("nav-sticky");
   }

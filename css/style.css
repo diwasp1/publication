@@ -246,7 +246,7 @@ footer .backtop {
 }
 
 #index_page .banner .navbar-wrapper .primary-navbar .logo-container {
-  height: 90px;
+  height: 80px;
 }
 
 #index_page .banner .navbar-wrapper .primary-navbar .logo-container img {
@@ -381,7 +381,7 @@ footer .backtop {
     padding: 0px 10px;
   }
   #index_page .banner .navbar-wrapper .primary-navbar .logo-container {
-    height: 60px;
+    height: 80px;
   }
   #index_page .banner .navbar-wrapper .primary-content {
     display: none;
