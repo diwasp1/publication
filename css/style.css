@@ -1591,6 +1591,7 @@ footer .backtop {
   margin-top: 20px;
   border: 1px solid #008fd5;
   color: #008fd5;
+  font-size: 15px;
 }
 
 #product_page aside .aside_header:hover {
@@ -1631,6 +1632,7 @@ footer .backtop {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 14px;
 }
 
 #product_page aside .aside_drop1 {
@@ -1667,6 +1669,7 @@ footer .backtop {
 
 #product_page .bread a {
   color: #6d6d6f;
+  font-size: 14px;
 }
 
 #product_page .book_filter {
