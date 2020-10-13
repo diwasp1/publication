@@ -1,15 +1,4 @@
-// slider js
 $(document).ready(function () {
-  $(".slider-wrapper").slick({
-    infinite: true,
-
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "ease-out",
-  });
-
   let searchIcon = document.getElementById("search-icon");
   let searchBar = document.querySelector(".search-bar");
   let hamBar = document.querySelector("#ham-bar");
@@ -33,30 +22,41 @@ $(document).ready(function () {
       closeNav();
     }
   };
+
+  let navWrapper = document.querySelector(".navbar-wrapper");
+  let firstNav = document.querySelector(".first-navbar-wrapper");
+  let logoContainer = document.querySelector(".logo-container");
+  let navFixed = document.querySelector(".navbar-fixed");
+
+  window.onscroll = function () {
+    if (window.pageYOffset >= navWrapper.offsetTop + 80) {
+      // navWrapper.classList.add("nav-sticky");
+      navWrapper.style.position = "fixed";
+      navWrapper.style.background = "#0e4966";
+      navWrapper.style.transition = "all .9s linear";
+      firstNav.style.display = "none";
+      logoContainer.style.height = "60px";
+    } else {
+      navWrapper.style.position = "absolute";
+      navWrapper.style.background = "none";
+      firstNav.style.display = "flex";
+      logoContainer.style.height = "90px";
+
+      // navWrapper.classList.remove("nav-sticky");
+    }
+  };
+
+  window.onscroll = function () {
+    if (window.pageYOffset >= navFixed.offsetTop + 10) {
+      firstNav.style.display = "none";
+      logoContainer.style.height = "60px";
+
+    } else {
+      firstNav.style.display = "flex";
+      logoContainer.style.height = "90px";
+    }
+  };
 });
-
-let navWrapper = document.querySelector(".navbar-wrapper");
-let firstNav = document.querySelector(".first-navbar-wrapper");
-let logoContainer = document.querySelector(".logo-container");
-
-window.onscroll = function () {
-  if(window.pageYOffset >= navWrapper.offsetTop+80){
-    // navWrapper.classList.add("nav-sticky");
-    navWrapper.style.position = "fixed";
-    navWrapper.style.background = "#0e4966";
-    navWrapper.style.transition ="all .9s linear";
-    firstNav.style.display = "none";
-    logoContainer.style.height = "60px"
-
-  }else{
-    navWrapper.style.position = "absolute";
-    navWrapper.style.background = "none";
-    firstNav.style.display = "flex";
-    logoContainer.style.height = "90px";
-
-    // navWrapper.classList.remove("nav-sticky");
-  }
-};
 
 /* Set the width of the side navigation to 250px */
 function openNav() {

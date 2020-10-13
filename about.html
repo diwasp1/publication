@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 
@@ -14,10 +14,133 @@
 </head>
 
 <body>
-    
 
+    <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="#">Home</a>
+			<a href="#">About us</a>
+			<a href="#">Packages</a>
+			<a href="#">Brands</a>
+			<a href="#">Contact</a>
+			<a href="">Register</a>
+        </div>
+        
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                       <label for="">User Name</label>
+                       <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                       <label for="">Password</label>
+                       <input type="password" class="form-control" placeholder="*********">
+                    </div>
+                    <div class="form-group ">
+                        <button type="submit" class="btn signin">Login</button>
+                    </div>
+                    
 
-      <div id="packages_page">
+                </form>
+                <div class="social-login">
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <label for="">Save Password</label>
+                        </li>
+                        <li class="forget_password">
+                           <a href="">Forget Password?</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+             <div class="no_account">
+                 Haven't Any Account? <a href="register.html">Click here</a>
+             </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="navbar-fixed">
+			<div class="primary-navbar container ">
+				<div class="logo-container">
+					<img src="img/logo-02.png" class="img-fluid" alt="" />
+				</div>
+				<div class="primary-content">
+					<ul class="first-navbar-wrapper">
+                        <li>
+                            <input type="search" class="search-bar" placeholder="Search">
+							<a>
+                                <i id="search-icon" class="fas fa-search"></i>
+                            </a>
+						</li>
+								<li>
+                                    <i class="fa fa-phone"></i>
+                                    <a href="">+977 9841011111</a>
+								
+								</li>
+								<li>
+                                    <i class="fas fa-envelope"></i>
+									<a href="">info@oceanpublication.com</a>
+								</li>
+							</ul>
+							<ul class="second-navbar-wrapper">
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+
+								<li>
+									<a href="about.html">About us</a>
+								</li>
+								<li>
+									<a href="packages.html">
+										Packages
+									</a>
+								</li>
+								<li>
+									<a href="products.html">
+										Product
+									</a>
+                                </li>
+                                	<li>
+									<a href="contact.html">
+										Contact
+									</a>
+                                </li>
+                                <li>
+									<a href="" data-toggle="modal" data-target="#signin">
+										Login
+									</a>
+								</li>
+							</ul>
+				</div>
+				<div class="bars d-block d-lg-none">
+							<span id="ham-bar"  onclick="openNav()"><i class="fa fa-bars"></i></span>
+				</div>
+			</div>
+		</div>
+
+      <div id="about_page">
+        <div class="about_content">
+            <span>
+            About Page...
+            </span>
+
+        </div>
 
       </div>
 
