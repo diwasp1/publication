@@ -23,7 +23,7 @@ ul {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #008fd5;
+  // color: #008fd5;
 }
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -89,7 +89,7 @@ a:hover {
       padding: 10px 12px;
       margin: 16px 0px;
     }
-    .signin:hover{
+    .signin:hover {
       background-color: #034ea2;
     }
   }
@@ -782,7 +782,7 @@ footer {
           padding: 10px 12px;
           margin: 16px 0px;
         }
-        .signin:hover{
+        .signin:hover {
           background-color: #034ea2;
         }
       }
@@ -823,8 +823,8 @@ footer {
           margin: 16px 0px;
           border-radius: 5px;
         }
-        a:hover{
-           background-color: #034ea2;
+        a:hover {
+          background-color: #034ea2;
         }
       }
     }
@@ -1347,28 +1347,23 @@ footer {
 
 #product_page {
   margin-top: 110px;
+  padding: 0px 30px;
   aside {
     .aside_header {
-      padding: 10px;
+      padding: 10px 0px;
       margin-top: 20px;
-      // background: linear-gradient(45deg,#074da2, #0186ce);
-      border: 1px solid #008fd5;
-      color: #008fd5;
-      font-size: 15px;
-    }
-    .aside_header:hover {
-      background-color: #034ea2;
-      color: white;
-      border: none;
+      font-weight: 500;
+      color: #2d3954;
+      font-size: 18px;
     }
 
     .aside_drop {
-      padding: 10px;
-      color: #6d6d6f;
-      border-bottom: 1px solid #6d6d6f;
+      padding: 15px 0px;
+      color: #5e5e5e;
       display: flex;
       justify-content: space-between;
-
+      font-weight: 300;
+      cursor: pointer;
       span:nth-child(2) {
         color: #008fd5;
         cursor: pointer;
@@ -1387,6 +1382,8 @@ footer {
       display: flex;
       justify-content: space-between;
       font-size: 14px;
+      color: #6d6d6f;
+      font-weight: 300;
     }
 
     .aside_drop1 {
@@ -1410,9 +1407,7 @@ footer {
   .bread {
     display: flex;
     padding: 10px;
-    // background-color: grey;
     margin-top: 20px;
-    // margin-bottom: 35px;
 
     li {
       margin: 0px 10px;
@@ -1438,13 +1433,17 @@ footer {
       text-align: center;
     }
     .book_price {
-      display: flex;
-      justify-content: space-between;
       margin-top: 10px;
-      color: #6d6d6f;
-
-      span {
+      .old-price {
+        text-decoration: line-through;
+        display: inline;
+        margin-right: 10px;
+        color: #8a8989;
+      }
+      .new-price {
         color: #034ea2;
+        display: inline;
+        font-size: 16px;
       }
     }
 
@@ -1456,16 +1455,11 @@ footer {
     }
 
     .book_button {
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      // justify-content: space-between;
+      text-align: center;
       font-size: 12px;
       margin-top: 12px;
-
-      // .btn_explore {
-      //     border: 1px solid black;
-      //     line-height: 2em;
-      //     padding: 0px 1em;
-      // }
       .btn_like {
         color: #008fd5;
         font-size: 20px;
@@ -1478,8 +1472,10 @@ footer {
         text-align: center;
         border-radius: 2px;
         color: #0186ce;
-        padding: 7px;
+        padding: 7px 0px;
         border: 1px solid #008fd5;
+        width: 100%;
+        display: block;
       }
       .btn_addcart:hover {
         background-color: #034ea2;
@@ -1488,7 +1484,14 @@ footer {
     }
   }
 
+  //pagination
+
+  .page-link{
+    color: #5e5e5e;
+  }
+
   @media screen and (max-width: 768px) {
+    padding: 0px;
     .asider {
       display: none;
     }

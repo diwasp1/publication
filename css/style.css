@@ -24,7 +24,6 @@ ul {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #008fd5;
 }
 
 .sidenav {
@@ -1584,32 +1583,28 @@ footer .backtop {
 
 #product_page {
   margin-top: 110px;
+  padding: 0px 30px;
 }
 
 #product_page aside .aside_header {
-  padding: 10px;
+  padding: 10px 0px;
   margin-top: 20px;
-  border: 1px solid #008fd5;
-  color: #008fd5;
-  font-size: 15px;
-}
-
-#product_page aside .aside_header:hover {
-  background-color: #034ea2;
-  color: white;
-  border: none;
+  font-weight: 500;
+  color: #2d3954;
+  font-size: 18px;
 }
 
 #product_page aside .aside_drop {
-  padding: 10px;
-  color: #6d6d6f;
-  border-bottom: 1px solid #6d6d6f;
+  padding: 15px 0px;
+  color: #5e5e5e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 #product_page aside .aside_drop span:nth-child(2) {
@@ -1633,6 +1628,8 @@ footer .backtop {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 14px;
+  color: #6d6d6f;
+  font-weight: 300;
 }
 
 #product_page aside .aside_drop1 {
@@ -1686,18 +1683,20 @@ footer .backtop {
 }
 
 #product_page .book_list .book_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 10px;
-  color: #6d6d6f;
 }
 
-#product_page .book_list .book_price span {
+#product_page .book_list .book_price .old-price {
+  text-decoration: line-through;
+  display: inline;
+  margin-right: 10px;
+  color: #8a8989;
+}
+
+#product_page .book_list .book_price .new-price {
   color: #034ea2;
+  display: inline;
+  font-size: 16px;
 }
 
 #product_page .book_list .book_description {
@@ -1708,12 +1707,7 @@ footer .backtop {
 }
 
 #product_page .book_list .book_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
   font-size: 12px;
   margin-top: 12px;
 }
@@ -1732,8 +1726,10 @@ footer .backtop {
   text-align: center;
   border-radius: 2px;
   color: #0186ce;
-  padding: 7px;
+  padding: 7px 0px;
   border: 1px solid #008fd5;
+  width: 100%;
+  display: block;
 }
 
 #product_page .book_list .book_button .btn_addcart:hover {
@@ -1741,7 +1737,14 @@ footer .backtop {
   color: white;
 }
 
+#product_page .page-link {
+  color: #5e5e5e;
+}
+
 @media screen and (max-width: 768px) {
+  #product_page {
+    padding: 0px;
+  }
   #product_page .asider {
     display: none;
   }
