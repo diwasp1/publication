@@ -422,6 +422,27 @@ footer {
             }
           }
         }
+        .third-navbar{
+          text-align: end;
+          margin-top: 5px;
+        }
+        #search-icon {
+          background-color: #008fd5;
+          padding: 6px 11px;
+          border-radius: 3px;
+        }
+        .search-bar {
+          border-radius: 20px;
+          padding: 5px 10px;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          border: none;
+          display: none;
+          font-size: 14px;
+        }
+        .search-bar:focus {
+          outline: none;
+        }
       }
     }
   }
@@ -1486,7 +1507,7 @@ footer {
 
   //pagination
 
-  .page-link{
+  .page-link {
     color: #5e5e5e;
   }
 
