@@ -8,6 +8,7 @@ $(document).ready(function () {
   function displaySearch() {
     if (searchBar.style.display == "none") {
       searchBar.style.display = "inline-block";
+      // searchBar.style.transition = "all .9s linear";
       searchBar.focus();
       searchBar.value = "";
     } else {

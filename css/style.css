@@ -462,20 +462,6 @@ footer .backtop {
   color: #ffffff;
 }
 
-.banner .navbar-wrapper .primary-navbar .primary-content .first-navbar-wrapper li .search-bar {
-  border-radius: 20px;
-  padding: 5px 10px;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  border: none;
-  display: none;
-  font-size: 14px;
-}
-
-.banner .navbar-wrapper .primary-navbar .primary-content .first-navbar-wrapper li .search-bar:focus {
-  outline: none;
-}
-
 .banner .navbar-wrapper .primary-navbar .primary-content .second-navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,6 +473,7 @@ footer .backtop {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px;
+  position: relative;
 }
 
 .banner .navbar-wrapper .primary-navbar .primary-content .second-navbar-wrapper li {
@@ -500,11 +487,6 @@ footer .backtop {
   color: #ffffff;
 }
 
-.banner .navbar-wrapper .primary-navbar .primary-content .third-navbar {
-  text-align: end;
-  margin-top: 5px;
-}
-
 .banner .navbar-wrapper .primary-navbar .primary-content #search-icon {
   background-color: #008fd5;
   padding: 6px 11px;
@@ -512,13 +494,16 @@ footer .backtop {
 }
 
 .banner .navbar-wrapper .primary-navbar .primary-content .search-bar {
-  border-radius: 20px;
+  position: absolute;
+  border-radius: 4px;
   padding: 5px 10px;
   margin-bottom: 5px;
   margin-right: 5px;
-  border: none;
+  border: 1px solid #008fd5;
   display: none;
   font-size: 14px;
+  top: 30px;
+  right: 10px;
 }
 
 .banner .navbar-wrapper .primary-navbar .primary-content .search-bar:focus {
